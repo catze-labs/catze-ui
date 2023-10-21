@@ -1,9 +1,25 @@
 {
   "name": "catze-ui-core",
-  "private": true,
+  "homepage": "https://catze.xyz/",
   "version": "0.0.0",
   "type": "module",
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/catze-labs/catze-ui-core/issues",
+    "email": "hello@catze.xyz"
+  },
+  "author": {
+    "name": "Catze Labs",
+    "url": "https://catze.xyz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catze-labs/catze-ui-core"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": "8.19.2"
+  },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
