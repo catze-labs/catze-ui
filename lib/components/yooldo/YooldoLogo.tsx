@@ -1,9 +1,9 @@
 /**
  * Yooldo Logo
  */
-import React, { ComponentPropsWithRef } from "react";
+import React, { ComponentPropsWithRef } from 'react';
 
-interface YooldoLogoProps extends ComponentPropsWithRef<"svg"> {
+interface YooldoLogoProps extends ComponentPropsWithRef<'svg'> {
   pathClassName?: string;
 }
 

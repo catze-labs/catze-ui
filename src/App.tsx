@@ -1,4 +1,4 @@
-import YooldoLogo from "@/lib/components/yooldo/YooldoLogo";
+import YooldoLogo from '@/lib/components/yooldo/YooldoLogo';
 
 function App() {
   return (
