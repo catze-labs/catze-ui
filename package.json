@@ -1,7 +1,7 @@
 {
   "name": "catze-ui-core",
   "homepage": "https://catze.xyz/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "license": "UNLICENSED",
   "bugs": {
@@ -20,7 +20,7 @@
     "node": ">=18.0.0",
     "npm": "8.19.2"
   },
-  "main": "dist/main.js",
+  "main": "dist/catze-ui-core.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"
