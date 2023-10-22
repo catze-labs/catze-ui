@@ -1,10 +1,9 @@
 /**
  * Yooldo Logo
  */
+import React, { ComponentPropsWithRef } from "react";
 
-import { ComponentPropsWithRef } from "react";
-
-export default function YooldoLogo({ ...props }: ComponentPropsWithRef<"svg">) {
+const YooldoLogo: React.FC<ComponentPropsWithRef<"svg">> = ({ ...props }) => {
   return (
     <svg
       role="img"
@@ -33,4 +32,6 @@ export default function YooldoLogo({ ...props }: ComponentPropsWithRef<"svg">) {
       ></path>
     </svg>
   );
-}
+};
+
+export default YooldoLogo;
