@@ -1,7 +1,7 @@
 {
   "name": "catze-ui-core",
   "homepage": "https://catze.xyz/",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "license": "UNLICENSED",
   "bugs": {
@@ -31,11 +31,13 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

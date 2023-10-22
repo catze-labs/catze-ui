@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: [""],
+      include: ["lib"],
     }),
   ],
   resolve: {
