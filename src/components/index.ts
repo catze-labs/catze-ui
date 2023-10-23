@@ -1,4 +1,4 @@
-export { Test } from "./Test";
+export { Test } from './Test';
 
 /** YOOLDO */
-export { YooldoLogo } from "./yooldo/YooldoLogo";
+export { YooldoLogo } from './yooldo/YooldoLogo';
