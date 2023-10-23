@@ -1,27 +1,28 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import path from 'path';
 import dts from 'vite-plugin-dts';
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    dts({
-      include: ['lib'],
-    }),
-  ],
-  resolve: {
-    alias: [{ find: '@', replacement: resolve(__dirname, '') }],
-  },
   build: {
-    copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, 'lib/main.ts'),
-      formats: ['es'],
+      entry: path.resolve(__dirname, 'index.ts'),
+      name: 'catze-ui',
+      fileName: (format) => `index.${format}.js`
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
     },
+    sourcemap: true,
+    emptyOutDir: true,
+    copyPublicDir: false
   },
-});
+  plugins: [react(), dts({
+    include: ['src', './index.ts']
+  })],
+})
