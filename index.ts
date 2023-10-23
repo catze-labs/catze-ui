@@ -1,2 +1,3 @@
-export { Test } from './src/components/Test';
-export { YooldoLogo } from './src/components/yooldo/YooldoLogo';
+/** YOOLDO */
+export { YooldoLogo } from './src/yooldo/components/YooldoLogo';
+export { yooldoTailwindConfig } from './src/yooldo/tailwind/config';
