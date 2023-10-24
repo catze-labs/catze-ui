@@ -7,14 +7,17 @@ import { useOnClickOutside } from 'usehooks-ts';
 interface SelectOptionType {
   label: React.ReactNode;
   value: string | number;
-  data?: any;
+  data?: Record<string, unknown>;
 }
 
 export interface SelectBoxProps extends ComponentPropsWithoutRef<'select'> {
   hidePlaceholder?: boolean;
   options: SelectOptionType[];
   value: string | number;
-  onChange?: (e: React.ChangeEvent<HTMLSelectElement>, data?: any) => void;
+  onChange?: (
+    e: React.ChangeEvent<HTMLSelectElement>,
+    data?: Record<string, unknown>,
+  ) => void;
 }
 
 export const SelectTextBox: React.FC<SelectBoxProps> = ({

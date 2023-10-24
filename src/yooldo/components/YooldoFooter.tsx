@@ -12,7 +12,6 @@ interface LinkProps {
   href: string;
   external?: boolean;
 }
-const CDN_BASE_URL = 'https://assets.by-catze.xyz/yooldo-app';
 
 interface SocialItemProps extends Omit<LinkProps, keyof 'external' | 'name'> {
   icon: string;

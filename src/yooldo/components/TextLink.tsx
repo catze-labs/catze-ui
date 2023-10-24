@@ -7,21 +7,12 @@ export interface TextLinkProps
   extends Omit<ComponentPropsWithRef<'a'>, 'children'> {
   external?: boolean;
   label: string;
-  icon?: React.ReactNode;
   color?: 'white' | 'sunset' | 'blue' | 'green';
 }
 
 export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
   (
-    {
-      external = false,
-      label,
-      icon,
-      className,
-      href,
-      color = 'white',
-      ...props
-    },
+    { external = false, label, className, href, color = 'white', ...props },
     ref,
   ) => {
     return (
