@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
@@ -142,15 +143,15 @@ export default {
         outline: '0 0 0 1.5px #F97316',
       },
       zIndex: {
-        1: 1,
-        2: 2,
-        3: 3,
-        4: 4,
-        5: 5,
-        6: 6,
-        7: 7,
-        8: 8,
-        9: 9,
+        1: '1',
+        2: '2',
+        3: '3',
+        4: '4',
+        5: '5',
+        6: '6',
+        7: '7',
+        8: '8',
+        9: '9',
       },
       opacity: {
         80: '0.8',
@@ -158,6 +159,20 @@ export default {
 
       left: {
         '-1/5': '-20%',
+      },
+      animation: {
+        'move-tr-bl': 'tr-bl 30s ease-in-out infinite',
+        'move-tl-br': 'tl-br 16s ease-in-out infinite',
+      },
+      keyframes: {
+        'tr-bl': {
+          '0%, 100%': { transform: 'translate(-35%, -65%)' },
+          '50%': { transform: 'translate(-120%, 17%)' },
+        },
+        'tl-br': {
+          '0%, 100%': { transform: 'translate(-50%, -50%)' },
+          '50%': { transform: 'translate(65%, 24%)' },
+        },
       },
     },
   },
