@@ -136,9 +136,11 @@ export default {
         '14px': '14px',
       },
       boxShadow: {
-        'btn-primary': '4px 4px 0 0 #b54100',
-        'btn-secondary': '4px 4px 0 0 #005099',
+        'btn-sunset': '4px 4px 0 0 #b54100',
+        'btn-blue': '4px 4px 0 0 #005099',
         'btn-dark': '4px 4px 0 0 #576476',
+        'btn-purple': '4px 4px 0 0 #6500a0',
+        'btn-green': '4px 4px 0 0 #65a188',
         box: '0px 0px 20px 0px rgba(10, 48, 105, 0.80)',
         outline: '0 0 0 1.5px #F97316',
       },

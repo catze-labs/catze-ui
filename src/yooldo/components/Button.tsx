@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { cn } from '../../common/utils/cn';
 import '../../index.css';
 
-type ColorType = 'primary' | 'secondary' | 'dark';
+type ColorType = 'sunset' | 'blue' | 'white' | 'purple' | 'green';
 type VariantType = 'fill' | 'outline';
 type SizeType = 'base' | 'xs' | 'lg' | 'xl';
 
@@ -29,17 +29,24 @@ const INNER_PADDING_RECORD: Record<SizeType, string> = {
 };
 
 const FILL_COLORS_RECORD: Record<ColorType, string> = {
-  primary: 'bg-yooldo-sunset hover:shadow-btn-primary',
-  secondary: 'bg-yooldo-another-blue hover:shadow-btn-secondary',
-  dark: 'bg-yooldo-black hover:shadow-btn-dark dark:bg-yooldo-white dark:text-yooldo-black',
+  sunset: 'bg-yooldo-sunset hover:shadow-btn-sunset',
+  blue: 'bg-yooldo-another-blue hover:shadow-btn-blue',
+  white:
+    'bg-yooldo-black hover:shadow-btn-dark dark:bg-yooldo-white dark:text-yooldo-black',
+  purple: 'bg-yooldo-another-purple hover:shadow-btn-purple',
+  green: 'bg-yooldo-another-green hover:shadow-btn-green',
 };
 
 const OUTLINE_COLORS_RECORD: Record<ColorType, string> = {
-  primary:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-sunset hover:shadow-btn-primary text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
-  secondary:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-another-blue hover:shadow-btn-secondary text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
-  dark: 'bg-yooldo-white border border-[1.5px] border-yooldo-black text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black dark:border-yooldo-white',
+  sunset:
+    'bg-yooldo-white border border-[1.5px] border-yooldo-sunset hover:shadow-btn-sunset text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+  blue: 'bg-yooldo-white border border-[1.5px] border-yooldo-another-blue hover:shadow-btn-blue text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+  white:
+    'bg-yooldo-white border border-[1.5px] border-yooldo-black text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black dark:border-yooldo-white',
+  purple:
+    'bg-yooldo-white border border-[1.5px] border-yooldo-another-purple hover:shadow-btn-purple text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+  green:
+    'bg-yooldo-white border border-[1.5px] border-yooldo-another-green hover:shadow-btn-green text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -47,7 +54,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     {
       children,
       className,
-      color = 'primary',
+      color = 'sunset',
       size = 'base',
       variant = 'fill',
       icon,

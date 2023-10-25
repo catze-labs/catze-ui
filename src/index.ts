@@ -1,3 +1,4 @@
+import { YooldoFooter } from './yooldo/components/YooldoFooter';
 /** YOOLDO */
 export {
   YooldoLogo,
@@ -35,4 +36,12 @@ export {
   TextLink as YooldoTextLink,
   type TextLinkProps as YooldoTextLinkProps,
 } from './yooldo/components/TextLink';
+export {
+  TopScrollButton as YooldoTopScrollButton,
+  type TopBtnProps as YooldoTopScrolButtonProps,
+} from './yooldo/components/TopScrollButton';
+export {
+  YooldoFooter,
+  type FooterProps as YooldoFooterProps,
+} from './yooldo/components/YooldoFooter';
 export { yooldoTailwindConfig } from './yooldo/tailwind/config';
