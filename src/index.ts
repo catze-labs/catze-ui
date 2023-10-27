@@ -1,4 +1,3 @@
-import { YooldoFooter } from './yooldo/components/YooldoFooter';
 /** YOOLDO */
 export {
   YooldoLogo,
@@ -44,4 +43,24 @@ export {
   YooldoFooter,
   type FooterProps as YooldoFooterProps,
 } from './yooldo/components/YooldoFooter';
+export {
+  Input as YooldoInput,
+  type InputProps as YooldoInputProps,
+} from './yooldo/components/Input';
+export {
+  InputPassword as YooldoInputPassword,
+  type InputPasswordProps as YooldoInputPasswordProps,
+} from './yooldo/components/InputPassword';
+export {
+  TabIndicator as YooldoTabIndicator,
+  type TabIndicatorProps as YooldoTabIndicatorProps,
+} from './yooldo/components/TabIndicator';
+export {
+  TagChip as YooldoTagChip,
+  type TagChipProps as YooldoTagChiProps,
+} from './yooldo/components/TagChip';
+export {
+  ToggleButton as YooldoToggleButton,
+  type ToggleButtonProps as YooldoToggleButtonProps,
+} from './yooldo/components/ToggleButton';
 export { yooldoTailwindConfig } from './yooldo/tailwind/config';

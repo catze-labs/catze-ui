@@ -12,7 +12,7 @@ const COLOR_SCHEME_RECORD: Record<ColorType, string> = {
   blue: 'bg-yooldo-another-blue-100',
   green: 'bg-yooldo-another-green-100',
   purple: 'bg-yooldo-another-purple-100',
-  white: 'bg-yooldo-anonther-black-100',
+  white: 'bg-yooldo-black-100',
 };
 
 export const Divider: React.FC<DividerProps> = ({

@@ -24,7 +24,7 @@ export {
   type GlowingProps as YooldoGlowingProps,
 } from './src/yooldo/components/GlowingBackground';
 export {
-  Pagination as YooldoGlowingPagination,
+  Pagination as YooldoPagination,
   type PaginationProps as YooldoPaginationProps,
 } from './src/yooldo/components/Pagination';
 export {
@@ -43,4 +43,24 @@ export {
   YooldoFooter,
   type FooterProps as YooldoFooterProps,
 } from './src/yooldo/components/YooldoFooter';
+export {
+  Input as YooldoInput,
+  type InputProps as YooldoInputProps,
+} from './src/yooldo/components/Input';
+export {
+  InputPassword as YooldoInputPassword,
+  type InputPasswordProps as YooldoInputPasswordProps,
+} from './src/yooldo/components/InputPassword';
+export {
+  TabIndicator as YooldoTabIndicator,
+  type TabIndicatorProps as YooldoTabIndicatorProps,
+} from './src/yooldo/components/TabIndicator';
+export {
+  TagChip as YooldoTagChip,
+  type TagChipProps as YooldoTagChiProps,
+} from './src/yooldo/components/TagChip';
+export {
+  ToggleButton as YooldoToggleButton,
+  type ToggleButtonProps as YooldoToggleButtonProps,
+} from './src/yooldo/components/ToggleButton';
 export { yooldoTailwindConfig } from './src/yooldo/tailwind/config';
