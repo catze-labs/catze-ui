@@ -20,7 +20,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
   useEffect(() => {
     onChange?.(isSelected);
-  }, [isSelected]);
+  }, [isSelected, onChange]);
   return (
     <div className={'flex items-center gap-2'}>
       <button

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { useWindowSize } from 'usehooks-ts';
 import { cn } from '../../common/utils/cn';
 import '../../index.css';
@@ -33,42 +33,48 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
 
   /**
    *
-   * @param index fix position of highlights when first rendering occuring
-   * @returns forwarding translateX style handler
-   */
-  const initilizeHighlightSize = (index: number) => {
-    if (!parentRef?.current || !highlightRef?.current) return;
-    const overZeroIndex = index < 0 ? 0 : index;
-    const buttonWidth = parentRef.current.children[overZeroIndex].clientWidth;
-
-    // each container has gap, so width + gap is proper width for highlight.
-    highlightRef.current.style.width = `${buttonWidth + gap}px`;
-    moveHighlight(buttonWidth, overZeroIndex);
-  };
-
-  /**
-   *
    * @param clientWidth width of each tab element.
    * @param index index of elements(starts with 0)
    * @returns
    */
-  const moveHighlight = (clientWidth: number, index: number) => {
-    if (!highlightRef?.current) return;
-    const buttonWidth = clientWidth;
+  const moveHighlight = useCallback(
+    (clientWidth: number, index: number) => {
+      if (!highlightRef?.current) return;
+      const buttonWidth = clientWidth;
 
-    // Each container has gap, therefore {width + gap} is proper width for highlight.
-    highlightRef.current.style.width = `${buttonWidth + gap}px`;
+      // Each container has gap, therefore {width + gap} is proper width for highlight.
+      highlightRef.current.style.width = `${buttonWidth + gap}px`;
 
-    // Calculate outer padding + gap counting(first of all, half of gap, and after whole gap is added multipled with index)
-    highlightRef.current.style.transform = `translateX(${
-      (buttonWidth + gap) * index - gap / 2 + padding
-    }px)`;
-  };
+      // Calculate outer padding + gap counting(first of all, half of gap, and after whole gap is added multipled with index)
+      highlightRef.current.style.transform = `translateX(${
+        (buttonWidth + gap) * index - gap / 2 + padding
+      }px)`;
+    },
+    [gap, padding],
+  );
+
+  /**
+   *
+   * @param index fix position of highlights when first rendering occuring
+   * @returns forwarding translateX style handler
+   */
+  const initilizeHighlightSize = useCallback(
+    (index: number) => {
+      if (!parentRef?.current || !highlightRef?.current) return;
+      const overZeroIndex = index < 0 ? 0 : index;
+      const buttonWidth = parentRef.current.children[overZeroIndex].clientWidth;
+
+      // each container has gap, so width + gap is proper width for highlight.
+      highlightRef.current.style.width = `${buttonWidth + gap}px`;
+      moveHighlight(buttonWidth, overZeroIndex);
+    },
+    [gap, moveHighlight],
+  );
 
   useEffect(() => {
     const firstIndex = items.findIndex((item) => item.value === defaultValue);
     initilizeHighlightSize(firstIndex);
-  }, [width, defaultValue, items]);
+  }, [width, defaultValue, items, initilizeHighlightSize]);
 
   return (
     <div className={'relative w-fit'}>

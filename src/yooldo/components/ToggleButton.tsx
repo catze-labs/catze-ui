@@ -13,6 +13,7 @@ export const ToggleButton = forwardRef<HTMLInputElement, ToggleButtonProps>(
   ({ className, id, ...props }, ref) => {
     return (
       <label
+        id={id}
         className={cn([
           'relative flex w-full cursor-pointer items-center',
           className,
