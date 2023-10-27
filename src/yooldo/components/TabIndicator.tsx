@@ -15,6 +15,7 @@ export interface TabIndicatorProps {
   items: TabItemType[];
   defaultValue: string;
   padding?: number;
+  gap?: number;
   onChange?: (item: TabItemType) => void;
 }
 
@@ -23,26 +24,44 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
   items,
   defaultValue,
   padding = 8,
+  gap = 16,
   onChange,
 }) => {
   const { width } = useWindowSize();
   const highlightRef = useRef<HTMLDivElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
 
+  /**
+   *
+   * @param index fix position of highlights when first rendering occuring
+   * @returns forwarding translateX style handler
+   */
   const initilizeHighlightSize = (index: number) => {
     if (!parentRef?.current || !highlightRef?.current) return;
     const overZeroIndex = index < 0 ? 0 : index;
     const buttonWidth = parentRef.current.children[overZeroIndex].clientWidth;
-    highlightRef.current.style.width = `${buttonWidth + 16}px`;
+
+    // each container has gap, so width + gap is proper width for highlight.
+    highlightRef.current.style.width = `${buttonWidth + gap}px`;
     moveHighlight(buttonWidth, overZeroIndex);
   };
 
+  /**
+   *
+   * @param clientWidth width of each tab element.
+   * @param index index of elements(starts with 0)
+   * @returns
+   */
   const moveHighlight = (clientWidth: number, index: number) => {
     if (!highlightRef?.current) return;
     const buttonWidth = clientWidth;
-    highlightRef.current.style.width = `${buttonWidth + 16}px`;
+
+    // Each container has gap, therefore {width + gap} is proper width for highlight.
+    highlightRef.current.style.width = `${buttonWidth + gap}px`;
+
+    // Calculate outer padding + gap counting(first of all, half of gap, and after whole gap is added multipled with index)
     highlightRef.current.style.transform = `translateX(${
-      (buttonWidth + 16) * index - 8 + padding
+      (buttonWidth + gap) * index - gap / 2 + padding
     }px)`;
   };
 
@@ -62,9 +81,9 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
         ref={highlightRef}
       />
       <div
-        style={{ paddingLeft: padding, paddingRight: padding }}
+        style={{ paddingLeft: padding, paddingRight: padding, gap: gap }}
         className={cn([
-          'relative flex h-12 w-fit items-center justify-center gap-4 rounded-full bg-yooldo-white dark:bg-yooldo-card-black',
+          'relative flex h-12 w-fit items-center justify-center rounded-full bg-yooldo-white dark:bg-yooldo-card-black',
           'border-[1.5px] border-yooldo-black-100 dark:border-none',
         ])}
         ref={parentRef}
