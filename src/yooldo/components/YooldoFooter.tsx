@@ -50,9 +50,10 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
           {backgroundNode}
         </div>
         <div
-          className={
-            'mx-auto flex w-full max-w-[1200px] flex-wrap justify-between gap-4 lg:flex-nowrap'
-          }
+          className={cn([
+            'mx-auto flex w-full max-w-[1200px] flex-wrap justify-between gap-4 lg:flex-nowrap',
+            'lg:py-10 lg:px-8',
+          ])}
         >
           {upperLinks.map((upperLink) => {
             const [key, items] = upperLink;

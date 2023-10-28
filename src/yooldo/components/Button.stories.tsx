@@ -9,31 +9,31 @@ const meta: Meta<ButtonProps> = {
 export default meta;
 type Story = StoryObj<ButtonProps>;
 
-export const ButtonFillPrimary: Story = {
-  name: 'button-fill-priamry',
+export const ButtonFillSunset: Story = {
+  name: 'button-fill-sunset',
   args: {
     size: 'base',
-    color: 'primary',
+    color: 'sunset',
     variant: 'fill',
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
 
-export const ButtonFillSecondary: Story = {
-  name: 'button-fill-secondary',
+export const ButtonFillBlue: Story = {
+  name: 'button-fill-blue',
   args: {
     size: 'base',
-    color: 'secondary',
+    color: 'blue',
     variant: 'fill',
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
 
-export const ButtonFillDark: Story = {
-  name: 'button-fill-dark',
+export const ButtonFillWhite: Story = {
+  name: 'button-fill-white',
   args: {
     size: 'base',
-    color: 'dark',
+    color: 'white',
     variant: 'fill',
   },
   render: (args) => (
@@ -46,11 +46,31 @@ export const ButtonFillDark: Story = {
   ),
 };
 
-export const ButtonOutlinePrimary: Story = {
-  name: 'button-outline-primary',
+export const ButtonFillPurple: Story = {
+  name: 'button-fill-purple',
   args: {
     size: 'base',
-    color: 'primary',
+    color: 'purple',
+    variant: 'fill',
+  },
+  render: (args) => <Button {...args}>Button</Button>,
+};
+
+export const ButtonFillGreen: Story = {
+  name: 'button-fill-green',
+  args: {
+    size: 'base',
+    color: 'green',
+    variant: 'fill',
+  },
+  render: (args) => <Button {...args}>Button</Button>,
+};
+
+export const ButtonOutlineSunset: Story = {
+  name: 'button-outline-sunset',
+  args: {
+    size: 'base',
+    color: 'sunset',
     variant: 'outline',
   },
   render: (args) => (
@@ -63,11 +83,62 @@ export const ButtonOutlinePrimary: Story = {
   ),
 };
 
-export const ButtonOutlineSecondary: Story = {
-  name: 'button-outline-secondary',
+export const ButtonOutlineBlue: Story = {
+  name: 'button-outline-blue',
   args: {
     size: 'base',
-    color: 'secondary',
+    color: 'blue',
+    variant: 'outline',
+  },
+  render: (args) => (
+    <div className={'flex gap-4'}>
+      <Button {...args}>Light Button</Button>
+      <div className={'dark'}>
+        <Button {...args}>Dark Button</Button>
+      </div>
+    </div>
+  ),
+};
+
+export const ButtonOutlineWhite: Story = {
+  name: 'button-outline-white',
+  args: {
+    size: 'base',
+    color: 'white',
+    variant: 'outline',
+  },
+  render: (args) => (
+    <div className={'flex gap-4'}>
+      <Button {...args}>Light Button</Button>
+      <div className={'dark'}>
+        <Button {...args}>Dark Button</Button>
+      </div>
+    </div>
+  ),
+};
+
+export const ButtonOutlinePurple: Story = {
+  name: 'button-outline-purple',
+  args: {
+    size: 'base',
+    color: 'purple',
+    variant: 'outline',
+  },
+  render: (args) => (
+    <div className={'flex gap-4'}>
+      <Button {...args}>Light Button</Button>
+      <div className={'dark'}>
+        <Button {...args}>Dark Button</Button>
+      </div>
+    </div>
+  ),
+};
+
+export const ButtonOutlineGreen: Story = {
+  name: 'button-outline-green',
+  args: {
+    size: 'base',
+    color: 'green',
     variant: 'outline',
   },
   render: (args) => (

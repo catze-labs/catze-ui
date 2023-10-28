@@ -12,7 +12,8 @@ type Story = StoryObj<CalloutProps>;
 export const CalloutInfo: Story = {
   name: 'callout-info',
   args: {
-    variant: 'info',
+    type: 'info',
+    variant: 'solid',
     title: 'Hello!',
     text: 'This is info callout.',
   },
@@ -22,7 +23,8 @@ export const CalloutInfo: Story = {
 export const CalloutWarning: Story = {
   name: 'callout-warning',
   args: {
-    variant: 'warning',
+    type: 'warning',
+    variant: 'outline',
     title: 'Hello!',
     text: 'This is warning callout.',
   },
@@ -32,7 +34,8 @@ export const CalloutWarning: Story = {
 export const CalloutError: Story = {
   name: 'callout-error',
   args: {
-    variant: 'error',
+    type: 'error',
+    variant: 'solid',
     title: 'Hello!',
     text: 'This is error callout.',
   },
