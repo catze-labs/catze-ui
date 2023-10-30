@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { forwardRef, ComponentPropsWithoutRef } from 'react';
 
 import { TextLink } from './TextLink';
 import { Divider } from './Divider';
@@ -28,19 +28,34 @@ type SocialLinkListProps = {
   [key in SocialLinkCategory]: SocialItemProps[];
 };
 
-export interface FooterProps {
+export interface FooterProps extends ComponentPropsWithoutRef<'footer'> {
   projectsLinks: ProjectLinkProps;
   socialLinks?: SocialLinkListProps['yooldo'];
   backgroundNode?: React.ReactNode;
+  logoClassName?: string;
 }
 export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
-  ({ projectsLinks, socialLinks, backgroundNode }, footerRef) => {
+  (
+    {
+      className,
+      projectsLinks,
+      socialLinks,
+      backgroundNode,
+      logoClassName,
+      ...props
+    },
+    footerRef,
+  ) => {
     const upperLinks = Object.entries(projectsLinks).map((v) => v);
 
     return (
       <footer
-        className={'relative flex flex-col gap-12 px-5 py-8 lg:px-8 lg:py-10'}
+        className={cn([
+          'relative flex flex-col gap-12 px-5 py-8 lg:px-8 lg:py-10',
+          className,
+        ])}
         ref={footerRef}
+        {...props}
       >
         <div
           className={
@@ -78,7 +93,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
         </div>
         <Divider className={'z-1 mx-auto w-full'} />
         <div className={'z-1 flex flex-col items-center gap-6'}>
-          <YooldoLogo />
+          <YooldoLogo className={logoClassName} />
           <div className={'flex items-center gap-4'}>
             {socialLinks?.map((item) => (
               <a
