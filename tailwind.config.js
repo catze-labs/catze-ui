@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const yooldoTailwindConfig = require('./src/yooldo/tailwind/config');
+import { yooldoTailwindConfig } from './src/yooldo/tailwind/config';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
