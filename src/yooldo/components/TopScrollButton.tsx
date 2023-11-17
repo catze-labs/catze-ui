@@ -13,12 +13,12 @@ export const TopScrollButton = forwardRef<HTMLButtonElement, TopBtnProps>(
     return (
       <button
         className={cn([
-          'z-3 h-10 w-10 rounded-full',
-          'fixed bottom-6 right-6 p-2 md:bottom-12 md:right-12',
-          color === 'sunset' && 'bg-[#ff5c0026]',
-          color === 'blue' && 'bg-[#0085ff26]',
-          color === 'green' && 'bg-[#13d08126]',
-          color === 'purple' && 'bg-[#9b00d126]',
+          'yl-z-3 yl-h-10 yl-w-10 yl-rounded-full',
+          'yl-fixed yl-bottom-6 yl-right-6 yl-p-2 yl-md:bottom-12 yl-md:right-12',
+          color === 'sunset' && 'yl-bg-[#ff5c0026]',
+          color === 'blue' && 'yl-bg-[#0085ff26]',
+          color === 'green' && 'yl-bg-[#13d08126]',
+          color === 'purple' && 'yl-bg-[#9b00d126]',
           className,
         ])}
         onClick={(e) => {
@@ -31,11 +31,11 @@ export const TopScrollButton = forwardRef<HTMLButtonElement, TopBtnProps>(
       >
         <ArrowUpIcon
           className={cn([
-            'stroke-[3]',
-            color === 'sunset' && 'text-yooldo-sunset',
-            color === 'blue' && 'text-yooldo-another-blue',
-            color === 'green' && 'text-yooldo-another-green',
-            color === 'purple' && 'text-yooldo-another-purple',
+            'yl-stroke-[3]',
+            color === 'sunset' && 'yl-text-yooldo-sunset',
+            color === 'blue' && 'yl-text-yooldo-another-blue',
+            color === 'green' && 'yl-text-yooldo-another-green',
+            color === 'purple' && 'yl-text-yooldo-another-purple',
           ])}
         />
       </button>
@@ -43,4 +43,4 @@ export const TopScrollButton = forwardRef<HTMLButtonElement, TopBtnProps>(
   },
 );
 
-TopScrollButton.displayName = 'yooldo-top-scroll-button';
+TopScrollButton.displayName = 'yl-yooldo-top-scroll-button';

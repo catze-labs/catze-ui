@@ -15,22 +15,22 @@ export const ToggleButton = forwardRef<HTMLInputElement, ToggleButtonProps>(
       <label
         id={id}
         className={cn([
-          'relative flex w-full cursor-pointer items-center',
+          'yl-relative yl-flex yl-w-full yl-cursor-pointer yl-items-center',
           className,
         ])}
       >
         <input
           type="checkbox"
           value=""
-          className="peer sr-only"
+          className="yl-peer yl-sr-only"
           {...props}
           ref={ref}
         />
         <div
           className={`
-          peer h-3.5 w-6.5 rounded-full border border-yooldo-black bg-yooldo-white after:absolute
-          after:left-px after:top-1/2 after:-translate-y-1/2 after:h-3 after:w-3 after:rounded-lg after:border after:bg-yooldo-black after:transition-all after:content-['']
-          peer-checked:after:translate-x-full peer-focus:outline-none dark:border-none
+          yl-peer yl-h-3.5 yl-w-6.5 yl-rounded-full yl-border yl-border-yooldo-black yl-bg-yooldo-white after:yl-absolute
+          after:yl-left-px after:yl-top-1/2 after:-yl-translate-y-1/2 after:yl-h-3 after:yl-w-3 after:yl-rounded-lg after:yl-border after:yl-bg-yooldo-black after:yl-transition-all after:yl-content-['']
+          peer-checked:after:yl-translate-x-full peer-focus:yl-outline-none dark:yl-border-none
         `}
         ></div>
       </label>

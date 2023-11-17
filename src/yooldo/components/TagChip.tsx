@@ -11,15 +11,15 @@ export interface TagChipProps {
 
 const COLOR_STYLE_RECORDS: Record<ColorType, string> = {
   sunset:
-    'bg-yooldo-sunset-50 border-yooldo-sunset border-[1.5px] border-yooldo-sunset text-yooldo-sunset',
-  red: 'bg-yooldo-sunrise-50 border-yooldo-sunrise border-[1.5px] border-yooldo-sunrise text-yooldo-sunrise',
-  blue: 'bg-yooldo-another-blue-50 border-yooldo-another-blue border-[1.5px] border-yooldo-another-blue text-yooldo-another-blue',
+    'yl-bg-yooldo-sunset-50 yl-border-yooldo-sunset yl-border-[1.5px] yl-border-yooldo-sunset yl-text-yooldo-sunset',
+  red: 'yl-bg-yooldo-sunrise-50 yl-border-yooldo-sunrise yl-border-[1.5px] yl-border-yooldo-sunrise yl-text-yooldo-sunrise',
+  blue: 'yl-bg-yooldo-another-blue-50 yl-border-yooldo-another-blue yl-border-[1.5px] yl-border-yooldo-another-blue yl-text-yooldo-another-blue',
   white:
-    'bg-yooldo-black-50 border-yooldo-black border-[1.5px] border-yooldo-black text-yooldo-black',
+    'yl-bg-yooldo-black-50 yl-border-yooldo-black yl-border-[1.5px] yl-border-yooldo-black yl-text-yooldo-black',
   purple:
-    'bg-yooldo-another-purple-50 border-yooldo-another-purple border-[1.5px] border-yooldo-another-purple text-yooldo-another-purple',
+    'yl-bg-yooldo-another-purple-50 yl-border-yooldo-another-purple yl-border-[1.5px] yl-border-yooldo-another-purple yl-text-yooldo-another-purple',
   green:
-    'bg-yooldo-another-green-50 border-yooldo-another-green border-[1.5px] border-yooldo-another-green text-[#44B4A7]',
+    'yl-bg-yooldo-another-green-50 yl-border-yooldo-another-green yl-border-[1.5px] yl-border-yooldo-another-green yl-text-[#44B4A7]',
 };
 
 export const TagChip: React.FC<TagChipProps> = ({
@@ -30,7 +30,7 @@ export const TagChip: React.FC<TagChipProps> = ({
   return (
     <label
       className={cn([
-        'rounded-lg px-4 py-1 text-sm font-medium',
+        'yl-rounded-lg yl-px-4 yl-py-1 yl-text-sm yl-font-medium',
         COLOR_STYLE_RECORDS[color],
         className,
       ])}

@@ -4,6 +4,7 @@ import { yooldoTailwindConfig } from './src/yooldo/tailwind/config';
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
+  prefix: 'yl-',
   theme: {
     extend: {
       screens: yooldoTailwindConfig.screens,

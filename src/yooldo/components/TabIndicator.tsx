@@ -45,7 +45,7 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
       // Each container has gap, therefore {width + gap} is proper width for highlight.
       highlightRef.current.style.width = `${buttonWidth + gap}px`;
 
-      // Calculate outer padding + gap counting(first of all, half of gap, and after whole gap is added multipled with index)
+      // Calculate outer padding + gap counting(first of all, half of gap, and after whole gap is added multiplied with index)
       highlightRef.current.style.transform = `translateX(${
         (buttonWidth + gap) * index - gap / 2 + padding
       }px)`;
@@ -55,10 +55,10 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
 
   /**
    *
-   * @param index fix position of highlights when first rendering occuring
+   * @param index fix position of highlights when first rendering occurring
    * @returns forwarding translateX style handler
    */
-  const initilizeHighlightSize = useCallback(
+  const initializeHighlightSize = useCallback(
     (index: number) => {
       if (!parentRef?.current || !highlightRef?.current) return;
       const overZeroIndex = index < 0 ? 0 : index;
@@ -73,15 +73,15 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
 
   useEffect(() => {
     const firstIndex = items.findIndex((item) => item.value === defaultValue);
-    initilizeHighlightSize(firstIndex);
-  }, [width, defaultValue, items, initilizeHighlightSize]);
+    initializeHighlightSize(firstIndex);
+  }, [width, defaultValue, items, initializeHighlightSize]);
 
   return (
-    <div className={'relative w-fit'}>
+    <div className={'yl-relative yl-w-fit'}>
       <div
         className={cn([
-          'absolute top-0 left-0 z-1 rounded-full border-[1.5px] border-yooldo-sunset bg-yooldo-highlight-sunset',
-          'h-full w-full transition-all',
+          'yl-absolute yl-top-0 yl-left-0 yl-z-1 yl-rounded-full yl-border-[1.5px] yl-border-yooldo-sunset yl-bg-yooldo-highlight-sunset',
+          'yl-h-full yl-w-full yl-transition-all',
           className,
         ])}
         ref={highlightRef}
@@ -89,14 +89,17 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
       <div
         style={{ paddingLeft: padding, paddingRight: padding, gap: gap }}
         className={cn([
-          'relative flex h-12 w-fit items-center justify-center rounded-full bg-yooldo-white dark:bg-yooldo-card-black',
-          'border-[1.5px] border-yooldo-black-100 dark:border-none',
+          'yl-relative yl-flex yl-h-12 yl-w-fit yl-items-center yl-justify-center yl-rounded-full yl-bg-yooldo-white yl-dark:bg-yooldo-card-black',
+          'yl-border-[1.5px] yl-border-yooldo-black-100 yl-dark:border-none',
         ])}
         ref={parentRef}
       >
         {items.map((item, i) => (
           <button
-            className={cn(['flex items-center justify-center z-2', className])}
+            className={cn([
+              'yl-flex yl-items-center yl-justify-center yl-z-2',
+              className,
+            ])}
             key={item.key}
             aria-label={String(item.key)}
             onClick={(e) => {
@@ -108,7 +111,7 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
             <p
               style={{ padding }}
               className={
-                'relative text-sm text-yooldo-black dark:text-yooldo-white lg:text-lg'
+                'yl-relative yl-text-sm yl-text-yooldo-black yl-dark:text-yooldo-white yl-lg:text-lg'
               }
             >
               {item.value}

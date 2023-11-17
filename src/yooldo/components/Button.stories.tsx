@@ -15,6 +15,7 @@ export const ButtonFillSunset: Story = {
     size: 'base',
     color: 'sunset',
     variant: 'fill',
+    disabled: false,
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
@@ -25,6 +26,7 @@ export const ButtonFillBlue: Story = {
     size: 'base',
     color: 'blue',
     variant: 'fill',
+    disabled: false,
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
@@ -35,11 +37,12 @@ export const ButtonFillWhite: Story = {
     size: 'base',
     color: 'white',
     variant: 'fill',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>
@@ -52,6 +55,7 @@ export const ButtonFillPurple: Story = {
     size: 'base',
     color: 'purple',
     variant: 'fill',
+    disabled: false,
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
@@ -62,6 +66,7 @@ export const ButtonFillGreen: Story = {
     size: 'base',
     color: 'green',
     variant: 'fill',
+    disabled: false,
   },
   render: (args) => <Button {...args}>Button</Button>,
 };
@@ -72,11 +77,12 @@ export const ButtonOutlineSunset: Story = {
     size: 'base',
     color: 'sunset',
     variant: 'outline',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>
@@ -89,11 +95,12 @@ export const ButtonOutlineBlue: Story = {
     size: 'base',
     color: 'blue',
     variant: 'outline',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>
@@ -106,11 +113,12 @@ export const ButtonOutlineWhite: Story = {
     size: 'base',
     color: 'white',
     variant: 'outline',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>
@@ -123,11 +131,12 @@ export const ButtonOutlinePurple: Story = {
     size: 'base',
     color: 'purple',
     variant: 'outline',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>
@@ -140,11 +149,12 @@ export const ButtonOutlineGreen: Story = {
     size: 'base',
     color: 'green',
     variant: 'outline',
+    disabled: false,
   },
   render: (args) => (
-    <div className={'flex gap-4'}>
+    <div className={'yl-flex yl-gap-4'}>
       <Button {...args}>Light Button</Button>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <Button {...args}>Dark Button</Button>
       </div>
     </div>

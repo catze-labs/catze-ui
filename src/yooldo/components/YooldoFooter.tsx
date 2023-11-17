@@ -51,7 +51,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
     return (
       <footer
         className={cn([
-          'relative flex flex-col gap-12 px-5 py-8 lg:px-8 lg:py-10',
+          'yl-relative yl-flex yl-flex-col yl-gap-12 yl-px-5 yl-py-8 lg:yl-px-8 lg:yl-py-10',
           className,
         ])}
         ref={footerRef}
@@ -59,15 +59,15 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
       >
         <div
           className={
-            'pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-none'
+            'yl-pointer-events-none yl-absolute yl-inset-0 yl-z-0 yl-overflow-hidden yl-rounded-none'
           }
         >
           {backgroundNode}
         </div>
         <div
           className={cn([
-            'mx-auto flex w-full max-w-[1200px] flex-wrap justify-between gap-4 lg:flex-nowrap',
-            'lg:py-10 lg:px-8',
+            'yl-mx-auto yl-flex yl-w-full yl-max-w-[1200px] yl-flex-wrap yl-justify-between yl-gap-4 lg:flex-nowrap',
+            'lg:yl-py-10 lg:yl-px-8',
           ])}
         >
           {upperLinks.map((upperLink) => {
@@ -75,12 +75,14 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
             return (
               <div
                 aria-label={key}
-                className={cn(['flex min-w-[180px] flex-col gap-4'])}
+                className={cn([
+                  'yl-flex yl-min-w-[180px] yl-flex-col yl-gap-4',
+                ])}
                 key={key}
               >
                 {items.map((item) => (
                   <TextLink
-                    className={'w-fit'}
+                    className={'yl-w-fit'}
                     external={item.external}
                     label={item.name || item.href}
                     href={item.href}
@@ -91,20 +93,22 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
             );
           })}
         </div>
-        <Divider className={'z-1 mx-auto w-full'} />
-        <div className={'z-1 flex flex-col items-center gap-6'}>
+        <Divider className={'yl-z-1 yl-mx-auto yl-w-full'} />
+        <div className={'yl-z-1 yl-flex yl-flex-col yl-items-center yl-gap-6'}>
           <YooldoLogo className={logoClassName} />
-          <div className={'flex items-center gap-4'}>
+          <div className={'yl-flex yl-items-center yl-gap-4'}>
             {socialLinks?.map((item) => (
               <a
-                className={'rounded-md dark:hover:bg-yooldo-black-400'}
+                className={'yl-rounded-md dark:hover:yl-bg-yooldo-black-400'}
                 rel="noreferrer"
                 target="_blank"
                 href={item.href}
                 key={item.key}
               >
                 <img
-                  className={cn(['fill-yooldo-black dark:fill-yooldo-white'])}
+                  className={cn([
+                    'yl-fill-yooldo-black dark:yl-fill-yooldo-white',
+                  ])}
                   src={item.icon}
                   width={32}
                   height={32}
@@ -115,7 +119,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
           </div>
           <p
             className={
-              'text-sm font-light text-yooldo-black dark:text-yooldo-white'
+              'yl-text-sm yl-font-light yl-text-yooldo-black dark:yl-text-yooldo-white'
             }
           >
             &copy; {new Date().getFullYear()} Yooldo All Rights Reserved
@@ -126,4 +130,4 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
   },
 );
 
-YooldoFooter.displayName = 'yooldo-footer';
+YooldoFooter.displayName = 'yl-yooldo-footer';

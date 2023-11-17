@@ -9,14 +9,14 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <input
         className={cn([
-          'w-full p-4',
-          'disabled:cursor-not-allowed',
-          'outline-none placeholder:text-yooldo-black-100',
-          'bg-yooldo-white bg-opacity-80 focus:bg-opacity-90',
-          'dark:bg-yooldo-black dark:bg-opacity-30 dark:text-yooldo-white dark:focus:bg-opacity-60',
-          'rounded-xl border-[1.5px] border-yooldo-black-100 focus:border-yooldo-sunset',
+          'yl-w-full yl-p-4',
+          'disabled:yl-cursor-not-allowed',
+          'yl-outline-none yl-placeholder:yl-text-yooldo-black-100',
+          'yl-bg-yooldo-white yl-bg-opacity-80 yl-focus:bg-opacity-90',
+          'yl-dark:bg-yooldo-black yl-dark:bg-opacity-30 yl-dark:yl-text-yooldo-white yl-dark:focus:bg-opacity-60',
+          'yl-rounded-xl yl-border-[1.5px] yl-border-yooldo-black-100 yl-focus:border-yooldo-sunset',
           disabled &&
-            'dark:bg-yooldo-black-300 dark:bg-opacity-40 dark:text-opacity-40',
+            'yl-dark:bg-yooldo-black-300 yl-dark:bg-opacity-40 yl-dark:yl-text-opacity-40',
           className,
         ])}
         disabled={disabled}
@@ -27,4 +27,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   },
 );
 
-Input.displayName = 'yooldo-input';
+Input.displayName = 'yl-yooldo-input';
