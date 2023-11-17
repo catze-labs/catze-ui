@@ -17,10 +17,10 @@ export interface GlowingProps {
 }
 
 const COLOR_SCHEME_RECORD: Record<ColorScheme, string> = {
-  purple: 'bg-yooldo-another-purple',
-  blue: 'bg-yooldo-another-blue',
-  green: 'bg-yooldo-another-green',
-  sunset: 'bg-yooldo-sunset',
+  purple: 'yl-bg-yooldo-another-purple',
+  blue: 'yl-bg-yooldo-another-blue',
+  green: 'yl-bg-yooldo-another-green',
+  sunset: 'yl-bg-yooldo-sunset',
 };
 
 export const GlowingBackground: React.FC<GlowingProps> = ({
@@ -33,7 +33,7 @@ export const GlowingBackground: React.FC<GlowingProps> = ({
     <div
       style={blur ? { filter: `blur(${blur})` } : {}}
       className={cn([
-        'absolute top-0 left-0 w-full h-full blur-[100px] overflow-hidden -z-1',
+        'yl-absolute yl-top-0 yl-left-0 yl-w-full yl-h-full yl-blur-[100px] yl-overflow-hidden yl--z-1',
         className,
       ])}
     >
@@ -45,8 +45,9 @@ export const GlowingBackground: React.FC<GlowingProps> = ({
           }
         }
         className={cn([
-          'absolute top-3/4 left-1/4 -translate-x-1/2 -translate-y-1/2 opacity-20 bg-yooldo-another-blue aspect-square w-1/3 rounded-full',
-          !leftPosition?.preventAnimated && 'transition-all animate-move-tl-br',
+          'yl-absolute yl-top-3/4 yl-left-1/4 yl--translate-x-1/2 yl--translate-y-1/2 yl-opacity-20 yl-aspect-square yl-w-1/3 yl-rounded-full',
+          !leftPosition?.preventAnimated &&
+            'yl-transition-all yl-animate-move-tl-br',
           leftPosition && COLOR_SCHEME_RECORD[leftPosition.color],
         ])}
       />
@@ -58,8 +59,9 @@ export const GlowingBackground: React.FC<GlowingProps> = ({
           }
         }
         className={cn([
-          'absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 opacity-20 bg-yooldo-another-green aspect-square w-1/2 rounded-full',
-          !leftPosition?.preventAnimated && 'transition-all animate-move-tr-bl',
+          'yl-absolute yl-top-1/2 yl-left-3/4 yl--translate-x-1/2 yl--translate-y-1/2 yl-opacity-20 yl-aspect-square yl-w-1/2 yl-rounded-full',
+          !leftPosition?.preventAnimated &&
+            'yl-transition-all yl-animate-move-tr-bl',
           rightPosition && COLOR_SCHEME_RECORD[rightPosition.color],
         ])}
       />

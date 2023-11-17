@@ -14,39 +14,39 @@ export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
 }
 
 const DEFAULT_BUTTON_STYLE =
-  'flex items-center justify-center py-3 px-6 rounded-full text-white disabled:bg-yooldo-black-100 bg-yooldo-sunset';
+  'yl-flex yl-items-center yl-justify-center yl-py-3 yl-px-6 yl-rounded-full yl-text-white disabled:yl-bg-yooldo-black-100';
 const HOVER_EFFECT_STYLE =
-  'transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-primary';
+  'yl-transition-all hover:yl--translate-x-1 hover:yl--translate-y-1 hover:yl-shadow-btn-primary';
 
 const DISABLED_STYLE =
-  'disabled:border-none disabled:bg-yooldo-black-100 disabled:text-yooldo-black-300 disabled:hover:shadow-none';
+  'disabled:yl-border-none disabled:yl-bg-yooldo-black-100 disabled:yl-text-yooldo-black-300 disabled:hover:yl-shadow-none';
 
 const INNER_PADDING_RECORD: Record<SizeType, string> = {
-  base: 'py-3 px-6',
-  xs: 'py-2, px-3',
-  lg: 'py-4 px-10',
-  xl: 'py-4 px-10 md:py-6 md:px-12',
+  base: 'yl-py-3 yl-px-6',
+  xs: 'yl-py-2, yl-px-3',
+  lg: 'yl-py-4 yl-px-10',
+  xl: 'yl-py-4 yl-px-10 md:yl-py-6 md:yl-px-12',
 };
 
 const FILL_COLORS_RECORD: Record<ColorType, string> = {
-  sunset: 'bg-yooldo-sunset hover:shadow-btn-sunset',
-  blue: 'bg-yooldo-another-blue hover:shadow-btn-blue',
+  sunset: 'yl-bg-yooldo-sunset hover:yl-shadow-btn-sunset',
+  blue: 'yl-bg-yooldo-another-blue hover:yl-shadow-btn-blue',
   white:
-    'bg-yooldo-black hover:shadow-btn-dark dark:bg-yooldo-white dark:text-yooldo-black',
-  purple: 'bg-yooldo-another-purple hover:shadow-btn-purple',
-  green: 'bg-yooldo-another-green hover:shadow-btn-green',
+    'yl-bg-yooldo-black hover:yl-shadow-btn-dark dark:yl-bg-yooldo-white dark:yl-text-yooldo-black',
+  purple: 'yl-bg-yooldo-another-purple hover:yl-shadow-btn-purple',
+  green: 'yl-bg-yooldo-another-green hover:yl-shadow-btn-green',
 };
 
 const OUTLINE_COLORS_RECORD: Record<ColorType, string> = {
   sunset:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-sunset hover:shadow-btn-sunset text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
-  blue: 'bg-yooldo-white border border-[1.5px] border-yooldo-another-blue hover:shadow-btn-blue text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-sunset hover:yl-shadow-btn-sunset yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
+  blue: 'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-blue hover:yl-shadow-btn-blue yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
   white:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-black text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black dark:border-yooldo-white',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-black yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black dark:yl-border-yooldo-white',
   purple:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-another-purple hover:shadow-btn-purple text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-purple hover:yl-shadow-btn-purple yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
   green:
-    'bg-yooldo-white border border-[1.5px] border-yooldo-another-green hover:shadow-btn-green text-yooldo-black dark:text-yooldo-white dark:bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-green hover:yl-shadow-btn-green yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -83,12 +83,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        <div className={'flex items-center gap-5'}>
+        <div className={'yl-flex yl-items-center yl-gap-5'}>
           {icon && (
             <span
               className={cn([
-                'rounded-full bg-yooldo-white p-[11px]',
-                disabled && 'bg-yooldo-black-50',
+                'yl-rounded-full yl-bg-yooldo-white yl-p-[11px]',
+                disabled && 'yl-bg-yooldo-black-50',
               ])}
             >
               {icon}

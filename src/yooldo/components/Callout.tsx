@@ -18,14 +18,15 @@ export interface CalloutProps
 }
 
 const colorByType: Record<CalloutType, string> = {
-  info: 'dark:text-yooldo-another-blue text-yooldo-another-blue',
-  warning: 'dark:text-yellow-300 text-yellow-300',
-  error: 'dark:text-red-500 text-red-500',
+  info: 'dark:yl-text-yooldo-another-blue yl-text-yooldo-another-blue',
+  warning: 'dark:yl-text-yellow-300 yl-text-yellow-300',
+  error: 'dark:yl-text-red-500 yl-text-red-500',
 };
 
 const boxStyleByVariant: Record<CalloutVariantType, string> = {
-  outline: 'dark:bg-yooldo-black-900 dark:bg-opacity-40 border-[1.5px]',
-  solid: 'bg-yooldo-black-400',
+  outline:
+    'dark:yl-bg-yooldo-black-900 dark:yl-bg-opacity-40 yl-border-[1.5px]',
+  solid: 'yl-bg-yooldo-black-400',
 };
 
 export const Callout: React.FC<CalloutProps> = ({
@@ -39,17 +40,20 @@ export const Callout: React.FC<CalloutProps> = ({
   const iconByVariant = {
     info: (
       <InformationCircleIcon
-        className={cn(['h-6 w-6 text-yooldo-another-blue', colorByType[type]])}
+        className={cn([
+          'yl-h-6 yl-w-6 yl-text-yooldo-another-blue',
+          colorByType[type],
+        ])}
       />
     ),
     warning: (
       <ExclamationTriangleIcon
-        className={cn(['h-6 w-6 text-yellow-300', colorByType[type]])}
+        className={cn(['yl-h-6 yl-w-6 yl-text-yellow-300', colorByType[type]])}
       />
     ),
     error: (
       <ExclamationCircleIcon
-        className={cn(['h-6 w-6 text-red-500', colorByType[type]])}
+        className={cn(['yl-h-6 yl-w-6 yl-text-red-500', colorByType[type]])}
       />
     ),
   };
@@ -57,18 +61,22 @@ export const Callout: React.FC<CalloutProps> = ({
   return (
     <aside
       className={cn([
-        'flex gap-2 rounded-2xl border-[1.5px] p-4 dark:bg-yooldo-black-900 dark:bg-opacity-40',
+        'yl-flex yl-gap-2 yl-rounded-2xl yl-border-[1.5px] yl-p-4 dark:yl-bg-yooldo-black-900 dark:yl-bg-opacity-40',
         boxStyleByVariant[variant],
-        title && 'flex-col',
-        !title && 'items-center gap-3',
+        title && 'yl-flex-col',
+        !title && 'yl-items-center yl-gap-3',
         className,
       ])}
       {...props}
     >
-      <header className="flex items-center gap-2">
+      <header className="yl-flex yl-items-center yl-gap-2">
         {iconByVariant[type]}
         {title && (
-          <h3 className={'flex-grow text-yooldo-black dark:text-yooldo-white'}>
+          <h3
+            className={
+              'yl-flex-grow yl-text-yooldo-black dark:yl-text-yooldo-white'
+            }
+          >
             {title}
           </h3>
         )}
@@ -76,7 +84,7 @@ export const Callout: React.FC<CalloutProps> = ({
 
       <p
         className={
-          'whitespace-pre-line text-xs text-yooldo-black dark:text-yooldo-white'
+          'yl-whitespace-pre-line yl-text-xs yl-text-yooldo-black dark:yl-text-yooldo-white'
         }
       >
         {text}

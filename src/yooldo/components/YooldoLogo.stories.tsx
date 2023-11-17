@@ -12,8 +12,8 @@ type Story = StoryObj<YooldoLogoProps>;
 export const Logo: Story = {
   name: 'Yooldo Logo',
   args: {
-    className: 'bg-black',
-    pathClassName: 'fill-white',
+    className: 'yl-bg-black',
+    pathClassName: 'yl-fill-white',
   },
   render: (args) => <YooldoLogo {...args} />,
 };

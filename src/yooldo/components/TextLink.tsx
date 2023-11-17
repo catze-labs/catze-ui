@@ -18,7 +18,10 @@ export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
     return (
       <a
         ref={ref}
-        className={cn(['relative flex items-center gap-2', className])}
+        className={cn([
+          'yl-relative yl-flex yl-items-center yl-gap-2',
+          className,
+        ])}
         href={href || ''}
         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         {...props}
@@ -26,25 +29,29 @@ export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
         <span
           className={cn([
             'hover:underline',
-            color === 'white' && 'text-yooldo-black dark:text-yooldo-white',
-            color === 'sunset' && 'text-yooldo-sunset dark:text-yooldo-sunset',
+            color === 'white' &&
+              'yl-text-yooldo-black dark:yl-text-yooldo-white',
+            color === 'sunset' &&
+              'yl-text-yooldo-sunset dark:yl-text-yooldo-sunset',
             color === 'blue' &&
-              'text-yooldo-another-blue dark:text-yooldo-another-blue',
+              'yl-text-yooldo-another-blue dark:yl-text-yooldo-another-blue',
             color === 'green' &&
-              'text-yooldo-another-green dark:text-yooldo-another-green',
+              'yl-text-yooldo-another-green dark:yl-text-yooldo-another-green',
           ])}
         >
           {label}
         </span>
         <ChevronRightIcon
           className={cn([
-            'w-5 dark:text-white',
-            color === 'white' && 'text-yooldo-black dark:text-yooldo-white',
-            color === 'sunset' && 'text-yooldo-sunset dark:text-yooldo-sunset',
+            'yl-w-5 dark:yl-text-white',
+            color === 'white' &&
+              'yl-text-yooldo-black dark:yl-text-yooldo-white',
+            color === 'sunset' &&
+              'yl-text-yooldo-sunset dark:yl-text-yooldo-sunset',
             color === 'blue' &&
-              'text-yooldo-another-blue dark:text-yooldo-another-blue',
+              'yl-text-yooldo-another-blue dark:yl-text-yooldo-another-blue',
             color === 'green' &&
-              'text-yooldo-another-green dark:text-yooldo-another-green',
+              'yl-text-yooldo-another-green dark:yl-text-yooldo-another-green',
           ])}
         />
       </a>

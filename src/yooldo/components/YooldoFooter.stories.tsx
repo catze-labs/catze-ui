@@ -99,12 +99,12 @@ export const YooldoFooterStory: Story = {
           'https://assets.by-catze.xyz/yooldo-app/background/bg-yooldo-footer.png'
         }
         alt={'footer-bg'}
-        className={'w-full h-full'}
+        className={'yl-w-full yl-h-full'}
       />
     ),
   },
   render: (args) => (
-    <div className={'dark relative w-full'}>
+    <div className={'yl-dark yl-relative yl-w-full'}>
       <YooldoFooter {...args} />
     </div>
   ),

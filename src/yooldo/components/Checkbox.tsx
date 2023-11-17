@@ -21,22 +21,23 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   useEffect(() => {
     onChange?.(isSelected);
   }, [isSelected, onChange]);
+
   return (
-    <div className={'flex items-center gap-2'}>
+    <div className={'yl-flex yl-items-center yl-gap-2'}>
       <button
         className={cn([
-          'relative flex h-4 w-4 items-center justify-center rounded-full border-[1.5px] border-yooldo-sunset-100',
-          isSelected && 'border-yooldo-sunset',
+          'yl-relative yl-flex yl-h-4 yl-w-4 yl-items-center yl-justify-center yl-rounded-full yl-border-[1.5px] yl-border-yooldo-sunset-100',
+          isSelected && 'yl-border-yooldo-sunset',
         ])}
         onClick={(e) => {
           e.preventDefault();
           setIsSelected((prev) => !prev);
         }}
       >
-        {isSelected && <CheckIcon className={'w-4 text-yooldo-sunset'} />}
+        {isSelected && <CheckIcon className={'yl-w-4 yl-text-yooldo-sunset'} />}
       </button>
       <div
-        className={'cursor-default'}
+        className={'yl-cursor-default'}
         onClick={(e) => {
           e.stopPropagation();
           setIsSelected((prev) => !prev);

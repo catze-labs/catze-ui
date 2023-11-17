@@ -8,11 +8,11 @@ export interface DividerProps extends Omit<ComponentProps<'hr'>, 'color'> {
 }
 
 const COLOR_SCHEME_RECORD: Record<ColorType, string> = {
-  sunset: 'bg-yooldo-sunset-100',
-  blue: 'bg-yooldo-another-blue-100',
-  green: 'bg-yooldo-another-green-100',
-  purple: 'bg-yooldo-another-purple-100',
-  white: 'bg-yooldo-black-100',
+  sunset: 'yl-bg-yooldo-sunset-100',
+  blue: 'yl-bg-yooldo-another-blue-100',
+  green: 'yl-bg-yooldo-another-green-100',
+  purple: 'yl-bg-yooldo-another-purple-100',
+  white: 'yl-bg-yooldo-black-100',
 };
 
 export const Divider: React.FC<DividerProps> = ({
@@ -24,7 +24,7 @@ export const Divider: React.FC<DividerProps> = ({
     <hr
       {...props}
       className={cn([
-        'h-px border-none',
+        'yl-h-px yl-border-none',
         COLOR_SCHEME_RECORD[color],
         className,
       ])}

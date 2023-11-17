@@ -24,12 +24,12 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
   return (
     <div
       className={cn([
-        'relative w-full overflow-hidden rounded-xl border-[1.5px] border-yooldo-black-100',
-        isFocused && 'border-yooldo-sunset',
+        'yl-relative yl-w-full yl-overflow-hidden yl-rounded-xl yl-border-[1.5px] yl-border-yooldo-black-100',
+        isFocused && 'yl-border-yooldo-sunset',
       ])}
     >
       <Input
-        className={cn(['border-none focus:border-none', className])}
+        className={cn(['yl-border-none yl-focus:border-none', className])}
         type={inputType}
         onFocus={(e) => {
           setIsFocused(true);
@@ -45,7 +45,7 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
         <button
           tabIndex={-1}
           className={
-            'absolute right-4 top-1/2 -translate-y-1/2 select-none bg-transparent'
+            'yl-absolute yl-right-4 yl-top-1/2 yl--translate-y-1/2 yl-select-none yl-bg-transparent'
           }
           onClick={(e) => {
             e.preventDefault();
@@ -56,12 +56,12 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
             customEyeOpenIcon ? (
               <>{customEyeOpenIcon}</>
             ) : (
-              <EyeIcon className={'w-5 text-yooldo-sunset'} />
+              <EyeIcon className={'yl-w-5 yl-text-yooldo-sunset'} />
             )
           ) : customEyeClosedIcon ? (
             <>{customEyeClosedIcon}</>
           ) : (
-            <EyeSlashIcon className={'w-5 text-yooldo-sunset'} />
+            <EyeSlashIcon className={'yl-w-5 yl-text-yooldo-sunset'} />
           )}
         </button>
       )}

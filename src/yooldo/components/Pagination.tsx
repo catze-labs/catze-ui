@@ -48,12 +48,14 @@ export const Pagination: React.FC<PaginationProps> = ({
   }, [currentPage, lastPage]);
 
   return (
-    <div className={cn(['mx-auto flex items-center gap-4', className])}>
+    <div
+      className={cn(['yl-mx-auto yl-flex yl-items-center yl-gap-4', className])}
+    >
       <button
         disabled={currentPage === 1}
         onClick={() => onClick?.(currentPage - 1)}
       >
-        <ChevronLeftIcon className={'w-4 text-yooldo-sunset'} />
+        <ChevronLeftIcon className={'yl-w-4 yl-text-yooldo-sunset'} />
       </button>
       {pages.map((page, i) => (
         <button
@@ -71,10 +73,10 @@ export const Pagination: React.FC<PaginationProps> = ({
         >
           <p
             className={cn([
-              'text-sm hover:underline',
-              'h-7 w-7 rounded-full leading-6 text-yooldo-black dark:text-yooldo-white',
+              'yl-text-sm yl-hover:yl-underline',
+              'yl-h-7 yl-w-7 yl-rounded-full yl-leading-6 yl-text-yooldo-black yl-dark:text-yooldo-white',
               currentPage === page &&
-                'border border-yooldo-sunset bg-yooldo-highlight-sunset',
+                'yl-border yl-border-yooldo-sunset yl-bg-yooldo-highlight-sunset',
             ])}
           >
             {page}
@@ -85,7 +87,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         disabled={isNaN(lastPage) || currentPage === lastPage}
         onClick={() => onClick?.(currentPage + 1)}
       >
-        <ChevronRightIcon className={'w-4 text-yooldo-sunset'} />
+        <ChevronRightIcon className={'yl-w-4 yl-text-yooldo-sunset'} />
       </button>
     </div>
   );

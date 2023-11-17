@@ -15,10 +15,10 @@ export const GlowingBackgroundBlueGreen: Story = {
     leftPosition: { x: '5%', y: '20%', color: 'blue' },
     rightPosition: { x: '95%', y: '30%', color: 'green' },
     blur: '30px',
-    className: 'z-0',
+    className: 'yl-z-0',
   },
   render: (args) => (
-    <div className={'relative w-80 h-80 bg-yooldo-card-black'}>
+    <div className={'yl-relative yl-w-80 yl-h-80 yl-bg-yooldo-card-black'}>
       <GlowingBackground {...args} />
     </div>
   ),
@@ -30,10 +30,10 @@ export const GlowingBackgroundPurpleSunset: Story = {
     leftPosition: { x: '5%', y: '20%', color: 'purple' },
     rightPosition: { x: '95%', y: '30%', color: 'sunset' },
     blur: '30px',
-    className: 'z-0',
+    className: 'yl-z-0',
   },
   render: (args) => (
-    <div className={'relative w-80 h-80 bg-yooldo-card-black'}>
+    <div className={'yl-relative yl-w-80 yl-h-80 yl-bg-yooldo-card-black'}>
       <GlowingBackground {...args} />
     </div>
   ),

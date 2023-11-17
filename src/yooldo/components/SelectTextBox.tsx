@@ -37,7 +37,7 @@ export const SelectTextBox: React.FC<SelectBoxProps> = ({
   });
 
   return (
-    <div className={'relative flex'} ref={selectWrapperRef}>
+    <div className={'yl-relative yl-flex'} ref={selectWrapperRef}>
       <select
         disabled={disabled}
         onChange={(e) => {
@@ -47,15 +47,16 @@ export const SelectTextBox: React.FC<SelectBoxProps> = ({
           onChange?.(e, value?.data);
         }}
         className={cn([
-          'select-without-icon text-sm text-yooldo-black dark:text-yooldo-white',
+          'yl-select-without-icon yl-text-sm yl-text-yooldo-black yl-dark:text-yooldo-white',
           !hidePlaceholder &&
             value === '' &&
-            'text-yooldo-black-100 dark:text-yooldo-black-100',
-          value === '' && 'text-yooldo-black-100 dark:text-yooldo-black-100',
-          'w-full px-4 py-2 pr-8',
-          'rounded-xl border-[1.5px] border-yooldo-sunset bg-yooldo-white px-4 py-1.5 outline-none dark:bg-yooldo-card-black',
+            'yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
+          value === '' &&
+            'yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
+          'yl-w-full yl-px-4 yl-py-2 yl-pr-8',
+          'yl-rounded-xl yl-border-[1.5px] yl-border-yooldo-sunset yl-bg-yooldo-white yl-px-4 yl-py-1.5 yl-outline-none yl-dark:bg-yooldo-card-black',
           disabled &&
-            'border-yooldo-black-100 text-yooldo-black-100 dark:text-yooldo-black-100',
+            'yl-border-yooldo-black-100 yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
           className,
         ])}
         placeholder={placeholder || 'Select Option'}
@@ -76,10 +77,10 @@ export const SelectTextBox: React.FC<SelectBoxProps> = ({
       </select>
       <ChevronDownIcon
         className={cn([
-          'absolute right-4 top-1/2 -translate-y-1/2',
-          'w-4 text-yooldo-sunset transition-all',
-          isOpened && 'rotate-180',
-          disabled && 'text-yooldo-black-100',
+          'yl-absolute yl-right-4 yl-top-1/2 yl--translate-y-1/2',
+          'yl-w-4 yl-text-yooldo-sunset yl-transition-all',
+          isOpened && 'yl-rotate-180',
+          disabled && 'yl-text-yooldo-black-100',
         ])}
       />
     </div>
