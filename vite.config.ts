@@ -23,6 +23,10 @@ export default defineConfig({
     emptyOutDir: true,
     copyPublicDir: false,
   },
+  resolve: {
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
+  },
+
   plugins: [
     react(),
     dts({
