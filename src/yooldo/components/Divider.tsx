@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type ColorType = 'sunset' | 'blue' | 'green' | 'purple' | 'white';
 export interface DividerProps extends Omit<ComponentProps<'hr'>, 'color'> {

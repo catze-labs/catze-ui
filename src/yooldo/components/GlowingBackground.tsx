@@ -1,5 +1,5 @@
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type ColorScheme = 'purple' | 'blue' | 'green' | 'sunset';
 type PositionType = {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { YooldoLogo, YooldoLogoProps } from './YooldoLogo';
+import { YooldoLogo, YooldoLogoProps } from '@/yooldo/components/YooldoLogo';
 
 const meta: Meta<YooldoLogoProps> = {
   component: YooldoLogo,

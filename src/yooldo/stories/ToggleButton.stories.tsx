@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ToggleButton, ToggleButtonProps } from './ToggleButton';
+import {
+  ToggleButton,
+  ToggleButtonProps,
+} from '@/yooldo/components/ToggleButton';
 
 const meta: Meta<ToggleButtonProps> = {
   component: ToggleButton,

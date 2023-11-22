@@ -1,7 +1,6 @@
 import React, { ComponentPropsWithRef } from 'react';
-
-import '../../index.css';
-import { cn } from '../../common/utils/cn';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 export interface YooldoLogoProps extends ComponentPropsWithRef<'svg'> {
   pathClassName?: string;

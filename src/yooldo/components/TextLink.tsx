@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 import React, { ComponentPropsWithRef } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 export interface TextLinkProps
   extends Omit<ComponentPropsWithRef<'a'>, 'children'> {

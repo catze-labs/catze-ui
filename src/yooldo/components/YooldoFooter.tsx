@@ -1,10 +1,10 @@
 import { forwardRef, ComponentPropsWithoutRef } from 'react';
 
-import { TextLink } from './TextLink';
+import { TextLink } from '@/yooldo/components/TextLink';
 import { Divider } from './Divider';
-import { YooldoLogo } from './YooldoLogo';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { YooldoLogo } from '@/yooldo/components/YooldoLogo';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 interface LinkProps {
   key: string;

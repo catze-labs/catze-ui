@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TagChip, TagChipProps } from './TagChip';
+import { TagChip, TagChipProps } from '@/yooldo/components/TagChip';
 
 const meta: Meta<TagChipProps> = {
   component: TagChip,

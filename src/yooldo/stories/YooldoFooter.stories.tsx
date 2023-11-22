@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { YooldoFooter, FooterProps } from './YooldoFooter';
+import { YooldoFooter, FooterProps } from '@/yooldo/components/YooldoFooter';
 const YooldoFooterLinks = {
   platform: [
     {

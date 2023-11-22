@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { SectionArea, SectionAreaProps } from './SectionArea';
+import { SectionArea, SectionAreaProps } from '@/yooldo/components/SectionArea';
 
 const meta: Meta<SectionAreaProps> = {
   component: SectionArea,
