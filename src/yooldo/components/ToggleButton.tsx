@@ -1,7 +1,6 @@
 import { ComponentPropsWithRef, forwardRef } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
-
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 /**
  * @label: required for accessibility
  */

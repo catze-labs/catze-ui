@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { SelectTextBox, SelectBoxProps } from './SelectTextBox';
+import {
+  SelectTextBox,
+  SelectBoxProps,
+} from '@/yooldo/components/SelectTextBox';
 
 const meta: Meta<SelectBoxProps> = {
   component: SelectTextBox,

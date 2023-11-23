@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Input, InputProps } from './Input';
+import { Input, InputProps } from '@/yooldo/components/Input';
 
 const meta: Meta<InputProps> = {
   component: Input,

@@ -1,8 +1,8 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { ComponentPropsWithoutRef, useRef, useState } from 'react';
-import '../../index.css';
-import { cn } from '../../common/utils/cn';
+import { cn } from '@/common/utils/cn';
 import { useOnClickOutside } from 'usehooks-ts';
+import '@/index.css';
 
 interface SelectOptionType {
   label: React.ReactNode;

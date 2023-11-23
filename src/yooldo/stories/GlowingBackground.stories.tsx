@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { GlowingBackground, GlowingProps } from './GlowingBackground';
+import {
+  GlowingBackground,
+  GlowingProps,
+} from '@/yooldo/components/GlowingBackground';
 
 const meta: Meta<GlowingProps> = {
   component: GlowingBackground,

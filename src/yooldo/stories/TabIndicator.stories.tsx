@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TabIndicator, TabIndicatorProps } from './TabIndicator';
+import {
+  TabIndicator,
+  TabIndicatorProps,
+} from '@/yooldo/components/TabIndicator';
 
 const meta: Meta<TabIndicatorProps> = {
   component: TabIndicator,

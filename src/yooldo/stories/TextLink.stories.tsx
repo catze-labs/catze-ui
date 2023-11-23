@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TextLink, TextLinkProps } from './TextLink';
+import { TextLink, TextLinkProps } from '@/yooldo/components/TextLink';
 
 const meta: Meta<TextLinkProps> = {
   component: TextLink,

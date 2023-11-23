@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Pagination, PaginationProps } from './Pagination';
+import { Pagination, PaginationProps } from '@/yooldo/components/Pagination';
 
 const meta: Meta<PaginationProps> = {
   component: Pagination,

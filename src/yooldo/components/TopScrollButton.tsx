@@ -1,7 +1,7 @@
 import { ArrowUpIcon } from '@heroicons/react/24/outline';
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type ColorScheme = 'purple' | 'blue' | 'green' | 'sunset';
 export interface TopBtnProps

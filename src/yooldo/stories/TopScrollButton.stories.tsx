@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TopScrollButton, TopBtnProps } from './TopScrollButton';
+import {
+  TopScrollButton,
+  TopBtnProps,
+} from '@/yooldo/components/TopScrollButton';
 
 const meta: Meta<TopBtnProps> = {
   component: TopScrollButton,

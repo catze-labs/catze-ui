@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Divider, DividerProps } from './Divider';
+import { Divider, DividerProps } from '@/yooldo/components/Divider';
 
 const meta: Meta<DividerProps> = {
   component: Divider,

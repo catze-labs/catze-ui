@@ -4,8 +4,8 @@ import {
   InformationCircleIcon,
 } from '@heroicons/react/24/outline';
 import React, { ComponentProps } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type CalloutVariantType = 'outline' | 'solid';
 type CalloutType = 'info' | 'warning' | 'error';
