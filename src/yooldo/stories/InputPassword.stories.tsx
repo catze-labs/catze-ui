@@ -23,7 +23,9 @@ export const InputCustomStory: Story = {
   args: {
     customEyeClosedIcon: (
       <span
-        className={'bg-yooldo-sunset text-yooldo-white px-2 py-1 rounded-full'}
+        className={
+          'yl-bg-yooldo-sunset yl-text-yooldo-white yl-px-2 yl-py-1 yl-rounded-full'
+        }
       >
         encrypt
       </span>
@@ -31,7 +33,7 @@ export const InputCustomStory: Story = {
     customEyeOpenIcon: (
       <span
         className={
-          'bg-yooldo-another-blue text-yooldo-white px-2 py-1 rounded-full'
+          'yl-bg-yooldo-another-blue yl-text-yooldo-white yl-px-2 yl-py-1 yl-rounded-full'
         }
       >
         decrypt

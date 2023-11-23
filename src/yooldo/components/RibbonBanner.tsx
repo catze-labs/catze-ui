@@ -1,6 +1,6 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 export interface RibbonBannerProps {
   className?: string;

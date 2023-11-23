@@ -18,7 +18,7 @@ export const TopScrollBlue: Story = {
     color: 'blue',
   },
   render: (args) => (
-    <div className={'relative'}>
+    <div className={'yl-relative'}>
       <TopScrollButton {...args} />
     </div>
   ),
@@ -30,7 +30,7 @@ export const TopScrollGreen: Story = {
     color: 'green',
   },
   render: (args) => (
-    <div className={'relative'}>
+    <div className={'yl-relative'}>
       <TopScrollButton {...args} />
     </div>
   ),
@@ -42,7 +42,7 @@ export const TopScrollPurple: Story = {
     color: 'purple',
   },
   render: (args) => (
-    <div className={'relative'}>
+    <div className={'yl-relative'}>
       <TopScrollButton {...args} />
     </div>
   ),
@@ -54,7 +54,7 @@ export const TopScrollSunset: Story = {
     color: 'sunset',
   },
   render: (args) => (
-    <div className={'relative'}>
+    <div className={'yl-relative'}>
       <TopScrollButton {...args} />
     </div>
   ),

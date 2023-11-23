@@ -7,12 +7,21 @@ export interface TextLinkProps
   extends Omit<ComponentPropsWithRef<'a'>, 'children'> {
   external?: boolean;
   label: string;
+  disabledUnderline?: boolean;
   color?: 'white' | 'sunset' | 'blue' | 'green';
 }
 
 export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
   (
-    { external = false, label, className, href, color = 'white', ...props },
+    {
+      external = false,
+      label,
+      className,
+      href,
+      color = 'white',
+      disabledUnderline,
+      ...props
+    },
     ref,
   ) => {
     return (
@@ -28,7 +37,7 @@ export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
       >
         <span
           className={cn([
-            'hover:underline',
+            !disabledUnderline && 'hover:yl-underline yl-underline-offset-4',
             color === 'white' &&
               'yl-text-yooldo-black dark:yl-text-yooldo-white',
             color === 'sunset' &&

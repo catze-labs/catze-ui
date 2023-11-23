@@ -27,12 +27,9 @@ export const SectionCardStory1: Story = {
           <li>px: 32px py: 40px</li>
         </ul>
       </SectionCard>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span
-            className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}
-            data-mode={'dark'}
-          >
+          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul
@@ -67,12 +64,9 @@ export const SectionCardStory2: Story = {
           <li>px: 32px py: 40px</li>
         </ul>
       </SectionCard>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span
-            className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}
-            data-mode={'dark'}
-          >
+          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul
@@ -107,12 +101,9 @@ export const SectionCardStory3: Story = {
           <li>px: 32px py: 40px</li>
         </ul>
       </SectionCard>
-      <div className={'dark'}>
+      <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span
-            className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}
-            data-mode={'dark'}
-          >
+          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul

@@ -66,7 +66,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
         </div>
         <div
           className={cn([
-            'yl-mx-auto yl-flex yl-w-full yl-max-w-[1200px] yl-flex-wrap yl-justify-between yl-gap-4 lg:flex-nowrap',
+            'yl-mx-auto yl-flex yl-w-full yl-max-w-screen-lg yl-flex-wrap yl-justify-between yl-gap-4 lg:yl-flex-nowrap',
             'lg:yl-py-10 lg:yl-px-8',
           ])}
         >

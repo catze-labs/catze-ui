@@ -26,7 +26,7 @@ export const InputDisabledStory: Story = {
 export const InputCustomStory: Story = {
   name: 'input-custom',
   args: {
-    className: 'focus:border-yooldo-another-blue',
+    className: 'focus:yl-border-yooldo-another-blue',
   },
   render: (args) => <Input {...args} />,
 };

@@ -3,7 +3,7 @@ import { yooldoTailwindConfig } from './src/yooldo/tailwind/config';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: ['class', '[class="dark"]'],
+  darkMode: ['class', '[class="yl-dark"]'],
   prefix: 'yl-',
   theme: {
     extend: {

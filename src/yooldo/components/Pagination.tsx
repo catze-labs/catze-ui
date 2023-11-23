@@ -73,8 +73,8 @@ export const Pagination: React.FC<PaginationProps> = ({
         >
           <p
             className={cn([
-              'yl-text-sm yl-hover:yl-underline',
-              'yl-h-7 yl-w-7 yl-rounded-full yl-leading-6 yl-text-yooldo-black yl-dark:text-yooldo-white',
+              'yl-text-sm hover:yl-underline',
+              'yl-h-7 yl-w-7 yl-rounded-full yl-leading-6 yl-text-yooldo-black dark:text-yooldo-white',
               currentPage === page &&
                 'yl-border yl-border-yooldo-sunset yl-bg-yooldo-highlight-sunset',
             ])}

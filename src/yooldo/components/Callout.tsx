@@ -26,7 +26,7 @@ const colorByType: Record<CalloutType, string> = {
 const boxStyleByVariant: Record<CalloutVariantType, string> = {
   outline:
     'dark:yl-bg-yooldo-black-900 dark:yl-bg-opacity-40 yl-border-[1.5px]',
-  solid: 'yl-bg-yooldo-black-400',
+  solid: 'yl-bg-yooldo-white dark:yl-bg-yooldo-black-400',
 };
 
 export const Callout: React.FC<CalloutProps> = ({

@@ -29,7 +29,7 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
       ])}
     >
       <Input
-        className={cn(['yl-border-none yl-focus:border-none', className])}
+        className={cn(['yl-border-none focus:yl-border-none', className])}
         type={inputType}
         onFocus={(e) => {
           setIsFocused(true);

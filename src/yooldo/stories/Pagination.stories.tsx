@@ -20,7 +20,7 @@ export const PaginationStory: Story = {
     },
   },
   render: (args) => (
-    <div className={'flex flex-col gap-4'}>
+    <div className={'yl-flex yl-flex-col yl-gap-4'}>
       {Array.from({ length: 30 }, (_, i) => <span>{i}</span>).slice(
         (args.currentPage - 1) * 4,
         Math.min(30, args.currentPage * 4 + 1),
