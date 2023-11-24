@@ -1,8 +1,8 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { ComponentPropsWithoutRef, useRef, useState } from 'react';
-import '../../index.css';
-import { cn } from '../../common/utils/cn';
+import { cn } from '@/common/utils/cn';
 import { useOnClickOutside } from 'usehooks-ts';
+import '@/index.css';
 
 interface SelectOptionType {
   label: React.ReactNode;
@@ -47,16 +47,16 @@ export const SelectTextBox: React.FC<SelectBoxProps> = ({
           onChange?.(e, value?.data);
         }}
         className={cn([
-          'yl-select-without-icon yl-text-sm yl-text-yooldo-black yl-dark:text-yooldo-white',
+          'yl-select-without-icon yl-text-sm yl-text-yooldo-black dark:yl-text-yooldo-white',
           !hidePlaceholder &&
             value === '' &&
-            'yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
+            'yl-text-yooldo-black-100 dark:yl-text-yooldo-black-100',
           value === '' &&
-            'yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
+            'yl-text-yooldo-black-100 dark:yl-text-yooldo-black-100',
           'yl-w-full yl-px-4 yl-py-2 yl-pr-8',
-          'yl-rounded-xl yl-border-[1.5px] yl-border-yooldo-sunset yl-bg-yooldo-white yl-px-4 yl-py-1.5 yl-outline-none yl-dark:bg-yooldo-card-black',
+          'yl-rounded-xl yl-border-[1.5px] yl-border-yooldo-sunset yl-bg-yooldo-white yl-px-4 yl-py-1.5 yl-outline-none dark:yl-bg-yooldo-card-black',
           disabled &&
-            'yl-border-yooldo-black-100 yl-text-yooldo-black-100 yl-dark:text-yooldo-black-100',
+            'yl-border-yooldo-black-100 yl-text-yooldo-black-100 dark:yl-text-yooldo-black-100',
           className,
         ])}
         placeholder={placeholder || 'Select Option'}

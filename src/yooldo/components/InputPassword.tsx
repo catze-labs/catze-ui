@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Input, type InputProps } from './Input';
-import { cn } from '../../common/utils/cn';
+import { cn } from '@/common/utils/cn';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline';
-import '../../index.css';
+import '@/index.css';
 
 export interface InputPasswordProps extends InputProps {
   hideIcon?: boolean;
@@ -29,7 +29,7 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
       ])}
     >
       <Input
-        className={cn(['yl-border-none yl-focus:border-none', className])}
+        className={cn(['yl-border-none focus:yl-border-none', className])}
         type={inputType}
         onFocus={(e) => {
           setIsFocused(true);

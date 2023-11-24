@@ -1,7 +1,7 @@
 import { ArrowUpIcon } from '@heroicons/react/24/outline';
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type ColorScheme = 'purple' | 'blue' | 'green' | 'sunset';
 export interface TopBtnProps
@@ -14,7 +14,7 @@ export const TopScrollButton = forwardRef<HTMLButtonElement, TopBtnProps>(
       <button
         className={cn([
           'yl-z-3 yl-h-10 yl-w-10 yl-rounded-full',
-          'yl-fixed yl-bottom-6 yl-right-6 yl-p-2 yl-md:bottom-12 yl-md:right-12',
+          'yl-fixed yl-bottom-6 yl-right-6 yl-p-2 md:yl-bottom-12 md:yl-right-12',
           color === 'sunset' && 'yl-bg-[#ff5c0026]',
           color === 'blue' && 'yl-bg-[#0085ff26]',
           color === 'green' && 'yl-bg-[#13d08126]',

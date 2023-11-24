@@ -1,8 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { YooldoFooter, FooterProps } from './YooldoFooter';
+import { YooldoFooter, FooterProps } from '@/yooldo/components/YooldoFooter';
 const YooldoFooterLinks = {
   platform: [
+    {
+      key: 'landing-yooldo',
+      name: 'Yooldo',
+      href: 'https://yooldo.gg',
+      external: true,
+    },
     {
       key: 'app-yooldo',
       name: 'Yooldo App',
@@ -11,11 +17,12 @@ const YooldoFooterLinks = {
     },
   ],
   landing: [
-    // {
-    //   key: 'team-yooldo',
-    //   name: 'Team Yooldo',
-    //   href: 'https://team.yooldo.gg',
-    // },
+    {
+      key: 'team-yooldo',
+      name: 'Team Yooldo',
+      href: 'https://team.yooldo.gg',
+      external: true,
+    },
     {
       key: 'yooldo-verse',
       name: 'Yooldo Verse',
@@ -104,8 +111,10 @@ export const YooldoFooterStory: Story = {
     ),
   },
   render: (args) => (
-    <div className={'yl-dark yl-relative yl-w-full'}>
-      <YooldoFooter {...args} />
+    <div className={'yl-relative yl-w-full'}>
+      <div className={'yl-dark'}>
+        <YooldoFooter {...args} />
+      </div>
     </div>
   ),
 };

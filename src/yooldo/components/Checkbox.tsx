@@ -1,7 +1,7 @@
 import { CheckIcon } from '@heroicons/react/24/outline';
 import React, { useEffect, useState } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 export interface CheckboxProps {
   children?: React.ReactNode;

@@ -2,7 +2,7 @@ export const yooldoTailwindConfig = {
   screens: {
     sm: `640px`,
     md: `768px`,
-    lg: `1240px`,
+    lg: `1200px`,
     xl: `1470px`,
     '2xl': `1740px`,
   },

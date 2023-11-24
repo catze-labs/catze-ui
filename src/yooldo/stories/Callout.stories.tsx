@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Callout, CalloutProps } from './Callout';
+import { Callout, CalloutProps } from '@/yooldo/components/Callout';
 
 const meta: Meta<CalloutProps> = {
   component: Callout,

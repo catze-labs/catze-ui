@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
-import { cn } from '../../common/utils/cn';
-import '../../index.css';
+import { cn } from '@/common/utils/cn';
+import '@/index.css';
 
 type ColorType = 'sunset' | 'blue' | 'white' | 'purple' | 'green';
 type VariantType = 'fill' | 'outline';
