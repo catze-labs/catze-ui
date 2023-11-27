@@ -22,7 +22,7 @@ export const SectionCard = forwardRef<HTMLDivElement, SectionCardProps>(
         ref={ref}
         className={cn([
           'yl-relative yl-w-full yl-flex yl-flex-col yl-gap-8',
-          'yl-bg-yooldo-black-50 dark:yl-bg-yooldo-card-black',
+          'yl-bg-yooldo-black-50 yl-dark:yl-bg-yooldo-card-black',
           size === 'default' &&
             'yl-px-8 yl-py-10 yl-rounded-2xl lg:yl-rounded-3xl',
           size === 'lg' &&

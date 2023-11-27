@@ -14,10 +14,10 @@ export const PopupStory1: Story = {
   args: { closeIcon: true },
   render: (args) => (
     <Popup {...args}>
-      <h1 className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+      <h1 className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
         EMERGENCY!
       </h1>
-      <p className={'yl-text-sm dark:yl-text-yooldo-white'}>
+      <p className={'yl-text-sm yl-dark:yl-text-yooldo-white'}>
         A lemon has a vitamin with just one lemon
       </p>
     </Popup>
@@ -30,10 +30,10 @@ export const PopupStory2: Story = {
   render: (args) => (
     <div className={'yl-dark'}>
       <Popup {...args}>
-        <h1 className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+        <h1 className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
           EMERGENCY!
         </h1>
-        <p className={'yl-text-sm dark:yl-text-yooldo-white'}>
+        <p className={'yl-text-sm yl-dark:yl-text-yooldo-white'}>
           A lemon has a vitamin with just one lemon
         </p>
       </Popup>

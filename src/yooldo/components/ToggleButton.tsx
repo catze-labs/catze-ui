@@ -29,7 +29,7 @@ export const ToggleButton = forwardRef<HTMLInputElement, ToggleButtonProps>(
           className={`
           yl-peer yl-h-3.5 yl-w-6.5 yl-rounded-full yl-border yl-border-yooldo-black yl-bg-yooldo-white after:yl-absolute
           after:yl-left-px after:yl-top-1/2 after:-yl-translate-y-1/2 after:yl-h-3 after:yl-w-3 after:yl-rounded-lg after:yl-border after:yl-bg-yooldo-black after:yl-transition-all after:yl-content-['']
-          peer-checked:after:yl-translate-x-full peer-focus:yl-outline-none dark:yl-border-none
+          peer-checked:after:yl-translate-x-full peer-focus:yl-outline-none yl-dark:yl-border-none
         `}
         ></div>
       </label>
