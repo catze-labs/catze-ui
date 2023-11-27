@@ -47,9 +47,7 @@ export const SectionArea = forwardRef<HTMLDivElement, SectionAreaProps>(
         >
           {typeof title === 'string' ? (
             <h2
-              className={
-                'yl-flex-grow yl-text-2xl yl-dark:yl-text-yooldo-white'
-              }
+              className={'yl-flex-grow yl-text-2xl dark:yl-text-yooldo-white'}
             >
               {title}
             </h2>

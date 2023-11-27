@@ -32,21 +32,21 @@ const FILL_COLORS_RECORD: Record<ColorType, string> = {
   sunset: 'yl-bg-yooldo-sunset hover:yl-shadow-btn-sunset',
   blue: 'yl-bg-yooldo-another-blue hover:yl-shadow-btn-blue',
   white:
-    'yl-bg-yooldo-black hover:yl-shadow-btn-dark yl-dark:yl-bg-yooldo-white yl-dark:yl-text-yooldo-black',
+    'yl-bg-yooldo-black hover:yl-shadow-btn-dark dark:yl-bg-yooldo-white dark:yl-text-yooldo-black',
   purple: 'yl-bg-yooldo-another-purple hover:yl-shadow-btn-purple',
   green: 'yl-bg-yooldo-another-green hover:yl-shadow-btn-green',
 };
 
 const OUTLINE_COLORS_RECORD: Record<ColorType, string> = {
   sunset:
-    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-sunset hover:yl-shadow-btn-sunset yl-text-yooldo-black yl-dark:yl-text-yooldo-white yl-dark:yl-bg-yooldo-black',
-  blue: 'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-blue hover:yl-shadow-btn-blue yl-text-yooldo-black yl-dark:yl-text-yooldo-white yl-dark:yl-bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-sunset hover:yl-shadow-btn-sunset yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
+  blue: 'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-blue hover:yl-shadow-btn-blue yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
   white:
-    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-black yl-text-yooldo-black yl-dark:yl-text-yooldo-white yl-dark:yl-bg-yooldo-black yl-dark:yl-border-yooldo-white',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-black yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black dark:yl-border-yooldo-white',
   purple:
-    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-purple hover:yl-shadow-btn-purple yl-text-yooldo-black yl-dark:yl-text-yooldo-white yl-dark:yl-bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-purple hover:yl-shadow-btn-purple yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
   green:
-    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-green hover:yl-shadow-btn-green yl-text-yooldo-black yl-dark:yl-text-yooldo-white yl-dark:yl-bg-yooldo-black',
+    'yl-bg-yooldo-white yl-border yl-border-[1.5px] yl-border-yooldo-another-green hover:yl-shadow-btn-green yl-text-yooldo-black dark:yl-text-yooldo-white dark:yl-bg-yooldo-black',
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(

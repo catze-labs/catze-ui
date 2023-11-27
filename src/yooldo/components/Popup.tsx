@@ -26,9 +26,9 @@ export const Popup: React.FC<PopupProps> = ({
   return (
     <SectionCard
       className={cn([
-        'yl-fixed yl-z-[999] yl-shadow-sm yl-shadow-yooldo-black-200 yl-dark:yl-shadow-yooldo-black yl-w-full yl-max-w-screen-md',
+        'yl-fixed yl-z-[999] yl-shadow-sm yl-shadow-yooldo-black-200 dark:yl-shadow-yooldo-black yl-w-full yl-max-w-screen-md',
         'yl-top-36 yl-left-1/2 -yl-translate-x-1/2',
-        'yl-dark:yl-bg-yooldo-black',
+        'dark:yl-bg-yooldo-black',
         className,
       ])}
     >
@@ -38,12 +38,12 @@ export const Popup: React.FC<PopupProps> = ({
             className={cn([
               'yl-flex yl-items-center yl-justify-center',
               'yl-absolute yl-right-0 yl-top-0',
-              'yl-w-6 yl-h-6 yl-rounded-md hover:yl-bg-[#00000020] yl-dark:hover:yl-bg-[#ffffff20]',
+              'yl-w-6 yl-h-6 yl-rounded-md hover:yl-bg-[#00000020] dark:hover:yl-bg-[#ffffff20]',
             ])}
           >
             <XMarkIcon
               className={
-                'yl-w-4 yl-h-4 yl-text-yooldo-black yl-dark:yl-text-yooldo-white'
+                'yl-w-4 yl-h-4 yl-text-yooldo-black dark:yl-text-yooldo-white'
               }
             />
           </button>

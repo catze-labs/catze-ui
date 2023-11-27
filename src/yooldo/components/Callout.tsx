@@ -18,15 +18,15 @@ export interface CalloutProps
 }
 
 const colorByType: Record<CalloutType, string> = {
-  info: 'yl-dark:yl-text-yooldo-another-blue yl-text-yooldo-another-blue',
-  warning: 'yl-dark:yl-text-yellow-300 yl-text-yellow-300',
-  error: 'yl-dark:yl-text-red-500 yl-text-red-500',
+  info: 'dark:yl-text-yooldo-another-blue yl-text-yooldo-another-blue',
+  warning: 'dark:yl-text-yellow-300 yl-text-yellow-300',
+  error: 'dark:yl-text-red-500 yl-text-red-500',
 };
 
 const boxStyleByVariant: Record<CalloutVariantType, string> = {
   outline:
-    'yl-dark:yl-bg-yooldo-black-900 yl-dark:yl-bg-opacity-40 yl-border-[1.5px]',
-  solid: 'yl-bg-yooldo-white yl-dark:yl-bg-yooldo-black-400',
+    'dark:yl-bg-yooldo-black-900 dark:yl-bg-opacity-40 yl-border-[1.5px]',
+  solid: 'yl-bg-yooldo-white dark:yl-bg-yooldo-black-400',
 };
 
 export const Callout: React.FC<CalloutProps> = ({
@@ -61,7 +61,7 @@ export const Callout: React.FC<CalloutProps> = ({
   return (
     <aside
       className={cn([
-        'yl-flex yl-gap-2 yl-rounded-2xl yl-border-[1.5px] yl-p-4 yl-dark:yl-bg-yooldo-black-900 yl-dark:yl-bg-opacity-40',
+        'yl-flex yl-gap-2 yl-rounded-2xl yl-border-[1.5px] yl-p-4 dark:yl-bg-yooldo-black-900 dark:yl-bg-opacity-40',
         boxStyleByVariant[variant],
         title && 'yl-flex-col',
         !title && 'yl-items-center yl-gap-3',
@@ -74,7 +74,7 @@ export const Callout: React.FC<CalloutProps> = ({
         {title && (
           <h3
             className={
-              'yl-flex-grow yl-text-yooldo-black yl-dark:yl-text-yooldo-white'
+              'yl-flex-grow yl-text-yooldo-black dark:yl-text-yooldo-white'
             }
           >
             {title}
@@ -84,7 +84,7 @@ export const Callout: React.FC<CalloutProps> = ({
 
       <p
         className={
-          'yl-whitespace-pre-line yl-text-xs yl-text-yooldo-black yl-dark:yl-text-yooldo-white'
+          'yl-whitespace-pre-line yl-text-xs yl-text-yooldo-black dark:yl-text-yooldo-white'
         }
       >
         {text}
