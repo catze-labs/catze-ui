@@ -17,7 +17,7 @@ export const SectionCardStory1: Story = {
   render: (args) => (
     <div className={'flex flex-col gap-6'}>
       <SectionCard {...args}>
-        <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+        <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
           Hello Yooldo Section Card
         </span>
         <ul
@@ -29,12 +29,12 @@ export const SectionCardStory1: Story = {
       </SectionCard>
       <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+          <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul
             className={
-              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside dark:yl-text-yooldo-white'
+              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside yl-dark:yl-text-yooldo-white'
             }
           >
             <li>light mode</li>
@@ -54,7 +54,7 @@ export const SectionCardStory2: Story = {
   render: (args) => (
     <div className={'flex flex-col gap-6'}>
       <SectionCard {...args}>
-        <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+        <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
           Hello Yooldo Section Card
         </span>
         <ul
@@ -66,12 +66,12 @@ export const SectionCardStory2: Story = {
       </SectionCard>
       <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+          <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul
             className={
-              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside dark:yl-text-yooldo-white'
+              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside yl-dark:yl-text-yooldo-white'
             }
           >
             <li>light mode</li>
@@ -91,7 +91,7 @@ export const SectionCardStory3: Story = {
   render: (args) => (
     <div className={'flex flex-col gap-6'}>
       <SectionCard {...args}>
-        <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+        <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
           Hello Yooldo Section Card
         </span>
         <ul
@@ -103,12 +103,12 @@ export const SectionCardStory3: Story = {
       </SectionCard>
       <div className={'yl-dark'}>
         <SectionCard {...args}>
-          <span className={'yl-text-xl yl-font-bold dark:yl-text-yooldo-white'}>
+          <span className={'yl-text-xl yl-font-bold yl-dark:yl-text-yooldo-white'}>
             Hello Yooldo Section Card
           </span>
           <ul
             className={
-              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside dark:yl-text-yooldo-white'
+              'yl-list-disc marker:yl-text-yooldo-white yl-list-inside yl-dark:yl-text-yooldo-white'
             }
           >
             <li>light mode</li>

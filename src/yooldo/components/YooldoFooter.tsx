@@ -99,7 +99,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
           <div className={'yl-flex yl-items-center yl-gap-4'}>
             {socialLinks?.map((item) => (
               <a
-                className={'yl-rounded-md dark:hover:yl-bg-yooldo-black-400'}
+                className={'yl-rounded-md yl-dark:hover:yl-bg-yooldo-black-400'}
                 rel="noreferrer"
                 target="_blank"
                 href={item.href}
@@ -107,7 +107,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
               >
                 <img
                   className={cn([
-                    'yl-fill-yooldo-black dark:yl-fill-yooldo-white',
+                    'yl-fill-yooldo-black yl-dark:yl-fill-yooldo-white',
                   ])}
                   src={item.icon}
                   width={32}
@@ -119,7 +119,7 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
           </div>
           <p
             className={
-              'yl-text-sm yl-font-light yl-text-yooldo-black dark:yl-text-yooldo-white'
+              'yl-text-sm yl-font-light yl-text-yooldo-black yl-dark:yl-text-yooldo-white'
             }
           >
             &copy; {new Date().getFullYear()} Yooldo All Rights Reserved

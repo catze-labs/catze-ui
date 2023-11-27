@@ -89,8 +89,8 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
       <div
         style={{ paddingLeft: padding, paddingRight: padding, gap: gap }}
         className={cn([
-          'yl-relative yl-flex yl-h-12 yl-w-fit yl-items-center yl-justify-center yl-rounded-full yl-bg-yooldo-white dark:yl-bg-yooldo-card-black',
-          'yl-border-[1.5px] yl-border-yooldo-black-100 dark:yl-border-none',
+          'yl-relative yl-flex yl-h-12 yl-w-fit yl-items-center yl-justify-center yl-rounded-full yl-bg-yooldo-white yl-dark:yl-bg-yooldo-card-black',
+          'yl-border-[1.5px] yl-border-yooldo-black-100 yl-dark:yl-border-none',
         ])}
         ref={parentRef}
       >
@@ -111,7 +111,7 @@ export const TabIndicator: React.FC<TabIndicatorProps> = ({
             <p
               style={{ padding }}
               className={
-                'yl-relative yl-text-sm yl-text-yooldo-black dark:yl-text-yooldo-white lg:yl-text-lg'
+                'yl-relative yl-text-sm yl-text-yooldo-black yl-dark:yl-text-yooldo-white lg:yl-text-lg'
               }
             >
               {item.value}
