@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from '@heroicons/react/24/outline';
+import { ChevronDoubleUpIcon } from '@heroicons/react/24/outline';
 import { cn } from '@/common/utils/cn';
 import '@/index.css';
 import { useState } from 'react';
@@ -24,15 +24,54 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
   return (
     <aside
       className={cn([
-        'yl-relative yl-flex yl-min-h-[40px] yl-w-full yl-items-center yl-justify-center yl-bg-yooldo-minting-800 yl-transition-all',
+        'yl-relative yl-flex yl-w-full yl-items-center yl-justify-center yl-transition-all',
         !open && 'yl-min-h-0 yl-h-0',
+        open && 'yl-min-h-[40px]',
         className,
       ])}
     >
       <div
         className={
-          'lg:yl-container yl-p-2 yl-w-full lg:yl-relative yl-flex yl-flex-col yl-items-center'
+          'yl-w-full yl-h-full yl-absolute yl-top-0 yl-left-0 yl-overflow-hidden'
         }
+      >
+        <span
+          aria-label={'circle-0'}
+          className={
+            'yl-absolute -yl-top-20 yl-rounded-full yl-left-0 -yl-translate-x-1/2 yl-w-[690px] yl-h-[690px] yl-bg-[#61e0d180] yl-blur-[65px]'
+          }
+        />
+        <span
+          aria-label={'circle-3'}
+          className={
+            'yl-absolute yl-top-0 -yl-translate-y-1/2 yl-rounded-full -yl-right-16 yl-w-[961px] yl-h-[961px] yl-bg-[#61e0d180] yl-blur-[65px]'
+          }
+        />
+        <span
+          aria-label={'circle-1'}
+          className={
+            'yl-absolute -yl-bottom-28 yl-left-0 yl-w-[919px] yl-h-[919px] yl-bg-[#6194e080] yl-rounded-full yl-blur-[65px]'
+          }
+        />
+        <span
+          aria-label={'circle-4'}
+          className={
+            'yl-absolute -yl-top-20 -yl-right-1/2 -yl-translate-x-1/2 yl-w-[542px] yl-h-[542px] yl-bg-[#6194e080] yl-rounded-full yl-blur-[65px]'
+          }
+        />
+        <span
+          aria-label={'circle-2'}
+          className={
+            'yl-absolute yl-top-0 yl-left-1/4 yl-w-[584px] yl-h-[584px] yl-rounded-full yl-bg-[#E08f6180] yl-blur-[35px]'
+          }
+        />
+      </div>
+      <div
+        className={cn([
+          'yl-px-2 yl-w-full yl-relative yl-flex yl-flex-col yl-items-center yl-py-2',
+          open && 'yl-py-7',
+          !open && 'yl-animate-bounce',
+        ])}
       >
         <div
           className={cn([
@@ -40,14 +79,12 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
             !open && 'yl-opacity-0 yl-invisible yl-h-0',
           ])}
         >
-          {children ? children : 'Default State!'}
+          {children ? children : 'Please let fill out latest news for project'}
         </div>
         {!hideToggleIcon && (
           <button
             className={cn([
-              'yl-absolute yl-top-full yl-left-1/2 -yl-translate-x-1/2 yl-flex yl-h-6 yl-w-6 -yl-translate-y-1/3 yl-items-center yl-justify-center',
-              'yl-rounded-full yl-bg-yooldo-minting-700 yl-opacity-80 hover:yl-opacity-100',
-              !open && '-yl-translate-y-[110%]',
+              'yl-absolute yl-top-full yl-left-1/2 -yl-translate-x-1/2 yl-flex yl-h-5 yl-w-5 yl-items-center yl-justify-center',
               toggleClassName,
             ])}
             onClick={(e) => {
@@ -60,9 +97,9 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
             {icon ? (
               icon
             ) : (
-              <ArrowUpIcon
+              <ChevronDoubleUpIcon
                 className={cn([
-                  'yl-h-3 yl-w-3 yl-text-yooldo-white yl-stroke-[3] yl-transition-transform',
+                  'yl-h-5 yl-w-5 yl-text-yooldo-white yl-transition-transform',
                   !open && 'yl-rotate-180',
                 ])}
               />
