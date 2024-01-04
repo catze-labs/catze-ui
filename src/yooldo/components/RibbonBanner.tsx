@@ -99,7 +99,7 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
             ) : (
               <ChevronDoubleUpIcon
                 className={cn([
-                  'yl-h-5 yl-w-5 yl-text-yooldo-white yl-transition-transform',
+                  'yl-h-5 yl-w-5 dark:yl-text-yooldo-white yl-transition-transform yl-text-yooldo-black',
                   !open && 'yl-rotate-180',
                 ])}
               />
