@@ -20,10 +20,21 @@ export const PaginationStory: Story = {
     },
   },
   render: (args) => (
-    <div className={'yl-flex yl-flex-col yl-gap-4 yl-w-full'}>
+    <div
+      className={
+        'yl-flex yl-flex-col yl-gap-4 yl-w-full yl-h-96 yl-bg-yooldo-black'
+      }
+    >
       <RibbonBanner {...args}>
-        <h1 className={'yl-text-xl yl-font-bold'}>BIG EVENT COMING!</h1>
-        <p className={'yl-text-sm'}>Please kindly wait....</p>
+        <a
+          href={'https://www.yooldo.gg'}
+          className={
+            'yl-text-sm yl-text-yooldo-white yl-underline yl-underline-offset-2'
+          }
+          target={'_blank'}
+        >
+          Deposit to Earn $YOOL token Rewards
+        </a>
       </RibbonBanner>
     </div>
   ),

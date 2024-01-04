@@ -95,7 +95,13 @@ export const YooldoFooter = forwardRef<HTMLDetailsElement, FooterProps>(
         </div>
         <Divider className={'yl-z-1 yl-mx-auto yl-w-full'} />
         <div className={'yl-z-1 yl-flex yl-flex-col yl-items-center yl-gap-6'}>
-          <YooldoLogo className={logoClassName} />
+          <a
+            className={'yl-rounded-md dark:hover:yl-bg-yooldo-black-400'}
+            href={'https://www.yooldo.gg'}
+            target={'_blank'}
+          >
+            <YooldoLogo className={logoClassName} />
+          </a>
           <div className={'yl-flex yl-items-center yl-gap-4'}>
             {socialLinks?.map((item) => (
               <a
