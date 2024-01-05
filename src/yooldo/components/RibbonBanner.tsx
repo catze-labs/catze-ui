@@ -5,7 +5,8 @@ import { useState } from 'react';
 
 export interface RibbonBannerProps {
   className?: string;
-  toggleClassName?: boolean;
+  toggleClassName?: string;
+  iconClassName?: string;
   onOpenHandler?: (open: boolean) => void;
   hideToggleIcon?: boolean;
   children?: React.ReactNode;
@@ -15,6 +16,7 @@ export interface RibbonBannerProps {
 export const RibbonBanner: React.FC<RibbonBannerProps> = ({
   className,
   toggleClassName,
+  iconClassName,
   onOpenHandler,
   hideToggleIcon,
   children,
@@ -25,8 +27,7 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
     <aside
       className={cn([
         'yl-relative yl-flex yl-w-full yl-items-center yl-justify-center yl-transition-all',
-        !open && 'yl-min-h-0 yl-h-0',
-        open && 'yl-min-h-[40px]',
+        'yl-min-h-[40px]',
         className,
       ])}
     >
@@ -75,7 +76,7 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
       >
         <div
           className={cn([
-            'yl-text-xs yl-tracking-tight hover:yl-bg-white hover:yl-bg-opacity-10 yl-px-2 yl-transition-all',
+            'yl-text-xs yl-tracking-tight hover:yl-bg-white hover:yl-bg-opacity-10 yl-px-2 yl-py-1 yl-transition-all yl-rounded-md',
             !open && 'yl-opacity-0 yl-invisible yl-h-0',
           ])}
         >
@@ -84,7 +85,8 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
         {!hideToggleIcon && (
           <button
             className={cn([
-              'yl-absolute yl-top-full yl-left-1/2 -yl-translate-x-1/2 yl-flex yl-h-5 yl-w-5 yl-items-center yl-justify-center',
+              'yl-absolute yl-top-full yl-left-1/2 -yl-translate-x-1/2 yl-flex yl-h-7 yl-w-7 yl-items-center yl-justify-center yl-rounded-full hover:yl-bg-[#ffffff20]',
+              !open && '-yl-translate-y-[calc(50%_+_4px)]',
               toggleClassName,
             ])}
             onClick={(e) => {
@@ -99,8 +101,9 @@ export const RibbonBanner: React.FC<RibbonBannerProps> = ({
             ) : (
               <ChevronDoubleUpIcon
                 className={cn([
-                  'yl-h-5 yl-w-5 dark:yl-text-yooldo-white yl-transition-transform yl-text-yooldo-black',
+                  'yl-h-5 yl-w-5 yl-text-yooldo-white yl-transition-transform',
                   !open && 'yl-rotate-180',
+                  iconClassName,
                 ])}
               />
             )}
