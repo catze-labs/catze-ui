@@ -75,7 +75,7 @@ export const YooldoFooter2024 = forwardRef<HTMLDetailsElement, FooterProps>(
           </div>
           <div
             className={
-              'yl-flex yl-justify-between yl-flex-1 yl-py-10 yl-px-8 yl-gap-8 sm:yl-flex-row yl-flex-col'
+              'yl-flex yl-justify-between yl-flex-1 yl-py-10 yl-px-4 md:yl-px-8 yl-gap-8 sm:yl-flex-row yl-flex-col'
             }
           >
             {projects.map(([key, links]) => {
@@ -113,7 +113,7 @@ export const YooldoFooter2024 = forwardRef<HTMLDetailsElement, FooterProps>(
         <div
           className={cn([
             'yl-flex yl-flex-col yl-gap-4 yl-w-full yl-max-w-screen-lg yl-mx-auto',
-            'yl-py-2.5 yl-px-8',
+            'yl-py-2.5 yl-px-4 md:yl-px-8',
           ])}
         >
           <div className={'yl-flex yl-gap-2.5'}>
