@@ -1,7 +1,7 @@
-import { ChevronRightIcon } from '@heroicons/react/24/outline';
-import React, { ComponentPropsWithRef } from 'react';
 import { cn } from '@/common/utils/cn';
 import '@/index.css';
+import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import React, { ComponentPropsWithRef } from 'react';
 
 export interface TextLinkProps
   extends Omit<ComponentPropsWithRef<'a'>, 'children'> {
@@ -37,7 +37,8 @@ export const TextLink = React.forwardRef<HTMLAnchorElement, TextLinkProps>(
       >
         <span
           className={cn([
-            !disabledUnderline && 'hover:yl-underline yl-underline-offset-4',
+            !disabledUnderline &&
+              'hover:yl-underline yl-underline-offset-4 yl-text-sm md:yl-text-base',
             color === 'white' &&
               'yl-text-yooldo-black dark:yl-text-yooldo-white',
             color === 'sunset' &&
