@@ -54,6 +54,13 @@ export const YooldoFooter2024 = forwardRef<HTMLDetailsElement, FooterProps>(
       >
         <div
           className={
+            'yl-pointer-events-none yl-absolute yl-inset-0 yl-z-0 yl-overflow-hidden yl-rounded-none'
+          }
+        >
+          {backgroundNode}
+        </div>
+        <div
+          className={
             'yl-flex yl-gap-[72px] yl-justify-between yl-flex-col md:yl-flex-row md:yl-justify-start yl-mx-auto yl-w-full yl-max-w-screen-lg'
           }
         >
