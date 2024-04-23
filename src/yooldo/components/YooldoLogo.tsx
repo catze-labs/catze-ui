@@ -1,6 +1,6 @@
-import React, { ComponentPropsWithRef } from 'react';
 import { cn } from '@/common/utils/cn';
 import '@/index.css';
+import React, { ComponentPropsWithRef } from 'react';
 
 export interface YooldoLogoProps extends ComponentPropsWithRef<'svg'> {
   pathClassName?: string;
@@ -16,13 +16,13 @@ export const YooldoLogo: React.FC<YooldoLogoProps> = ({
 }) => {
   return (
     <svg
+      className={cn(['yl-fill-yooldo-white', className])}
       role="img"
       width="52"
       height="49"
       viewBox="0 0 52 49"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      className={cn(['yl-fill-yooldo-white', className])}
       {...props}
     >
       <path
