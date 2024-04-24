@@ -12,7 +12,6 @@ interface LinkProps {
 }
 
 type ProjectCategory = 'yooldo' | 'yooldo-games';
-type CustomerServiceCategory = 'contact' | 'privacy' | 'terms';
 type ProjectLinkProps = {
   [key in ProjectCategory]: LinkProps[];
 };
