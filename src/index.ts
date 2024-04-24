@@ -76,6 +76,10 @@ export {
   type FooterProps as YooldoFooterProps,
 } from '@/yooldo/components/YooldoFooter';
 export {
+  YooldoFooter2024,
+  type FooterProps as YooldoFooterProps2024,
+} from '@/yooldo/components/YooldoFooter2024';
+export {
   YooldoLogo,
   type YooldoLogoProps,
 } from '@/yooldo/components/YooldoLogo';
